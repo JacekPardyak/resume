@@ -1,0 +1,69 @@
+% LaTeX resume using res.cls
+\documentclass[a4paper, line, 11pt]{res} % default is 10 pt
+\usepackage[utf8]{inputenc}
+\usepackage[T1 ]{fontenc}
+\usepackage[ french ,english]{babel}
+\usepackage{hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{latexsym}   % to get the \Box symbol
+\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
+\topmargin=-0.5in % start text higher on the page
+
+\begin{document} 
+ 
+\name{$name$} 
+\address{$if(contact.address)$$contact.address$\\$endif$$if(contact.telephone)$Tel: $contact.telephone$$endif$}        
+\address{$if(contact.email)$E-mail: $contact.email$$endif$$if(contact.url)$\\ URL: $contact.url$$endif$$if(contact.extra)$$contact.extra$$endif$}
+  
+                        
+\begin{resume}                         
+ 
+\section{PROFESSIONAL PROFILE}  
+  $profile$ 
+
+\section{SKILLS}  
+
+$for(skills)$
+    \textbf{$skills.category$}: $skills.list$$if(skills.continue)$\\$endif$
+$endfor$
+
+\section{EDUCATION} 
+
+$for(education)$
+    \uppercase{$education.school$} \emph{$education.title$}, $education.field$, $education.year$, $education.notes$ $if(education.continue)$\\$endif$
+$endfor$
+
+  
+%%$for(education)$
+%%$if(education.school)$
+%%$education.school$$if(education.title)$ ($education.title$)$endif$
+%%$else$
+%%$education$
+%%$endif$
+%%$endfor$
+
+\section{RECENT WORK EXPERIENCE}
+$for(experience)$
+    \textbf{\uppercase{$experience.employer$}}, $experience.city$ \\ \emph{$experience.position$} ($experience.period$)\\ $experience.decription$ $if(experience.continue)$\\$endif$
+$endfor$
+
+
+\section{OUTSIDE WORK ACCOMPLISHMENTS}  
+
+%%$for(author)$
+%%    $author.name$ wrote $author.book$
+%%$endfor$
+
+$for(outside-work)$
+    $outside-work.accomplishment$$if(outside-work.continue)$\\$endif$
+$endfor$
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
