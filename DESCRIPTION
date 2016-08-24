@@ -4,8 +4,9 @@ Title: Résumé and Cover Letter Builder
 Version: 0.1
 Date: 2016-08-03
 Authors@R: c(
-  person("Jacek", "Pardyak", role = c("aut", "cre"), email = "jacek.pardyak")
+  person("Jacek", "Pardyak", role = c("aut", "cre"), email = "jacek.pardyak@gmail.com")
   )
+Maintainer: Jacek Pardyak <jacek.pardyak@gmail.com>
 Description: A suite of custom R Markdown formats and templates for
   authoring Résumé and Cover Letters.
 License: GPL-3
