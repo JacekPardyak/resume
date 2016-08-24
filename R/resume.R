@@ -14,7 +14,7 @@
 #'
 #' \dontrun{
 #' library(rmarkdown)
-#' draft("MyArticle.Rmd", template = "resume", package = "resumeR")
+#' draft("MyArticle.Rmd", template = "resume", package = "resume")
 #' }
 #'
 #' @export
