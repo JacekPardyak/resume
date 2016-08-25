@@ -2,7 +2,7 @@
 % Please edit documentation in R/cover_letter.R
 \name{cover_letter}
 \alias{cover_letter}
-\title{Journal of Statistical Software (JSS) format.}
+\title{Template to build a Cover Letter.}
 \usage{
 cover_letter(..., keep_tex = TRUE)
 }
@@ -16,15 +16,13 @@ R Markdown output format to pass to
   \code{\link[rmarkdown:render]{render}}
 }
 \description{
-Format for creating a Journal of Statistical Software (JSS) articles. Adapted
-from
-\href{http://www.jstatsoft.org/about/submissions}{http://www.jstatsoft.org/about/submissions}.
+Template for creating a Cover Letter in R Studio. First create a new R Markdown document from template "Cover Letter" then modify it and knit PDF output.
 }
 \examples{
 
 \dontrun{
 library(rmarkdown)
-draft("MyArticle.Rmd", template = "cover_letter", package = "resumeR")
+draft("MyCoverLetter.Rmd", template = "cover_letter", package = "resume")
 }
 
 }
