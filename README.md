@@ -17,14 +17,14 @@ devtools::install_github("jacekpardyak/resume")
 
 3) Use the **New R Markdown** dialog to create resume or cover letter from appropriate template:
 
- ![New R Markdown](Capture1.PNG)
+ ![New R Markdown](./man/figures/Capture1.PNG)
 
 4) Modify the new created **R Markdown** document:
 
- ![Modify R Markdown](Capture2.PNG)
+ ![Modify R Markdown](./man/figures/Capture2.PNG)
 
 5) Use the **Knit** button to produce resulting document:
 
- ![PDF from R Markdown](Capture3.PNG)
+ ![PDF from R Markdown](./man/figures/Capture3.PNG)
 
 
