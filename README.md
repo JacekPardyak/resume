@@ -1,54 +1,25 @@
-
-### Installation
-
-You can install and use **rticles** from CRAN as follows:
-
-```r
-install.packages("rticles", type = "source")
-```
-
-If you wish to install the development version from GitHub you can do this:
-
-```r
-devtools::install_github("rstudio/rticles")
-```
-
-
 ### Overview
 
-The **rticles** package provides a suite of custom [R Markdown](http://rmarkdown.rstudio.com) LaTeX formats and templates for varoius formats, including:
+The **resume** package provides a suite of custom [R Markdown](http://rmarkdown.rstudio.com) LaTeX formats and templates for authoring resumes and cover letters. 
+That documents composition and formatting can be done using lightweight [markdown](http://rmarkdown.rstudio.com/authoring_basics.html) syntax, and R code and its output can be seamlessly included using [knitr](http://yihui.name/knitr/). At the same time, classical pdf output conform precisely to job application submission standards. 
 
-- [JSS](http://www.jstatsoft.org/) articles
+### Using resume from RStudio
 
-- [R Journal](http://journal.r-project.org/) articles
-
-- [CTeX](http://ctex.org) documents
-
-- [ACM](http://www.acm.org/) articles
-
-- [ACS](http://pubs.acs.org/) articles
-
-- [Elsevier](https://www.elsevier.com) journal submissions
-
-Under the hood, LaTeX templates are used to ensure that documents conform precisely to submission standards. At the same time, composition and formatting can be done using lightweight [markdown](http://rmarkdown.rstudio.com/authoring_basics.html) syntax, and R code and its output can be seamlessly included using [knitr](http://yihui.name/knitr/).
-
-Using **rticles** has some prerequisites which are described below. You can get most of these pre-requisites automatically by installing the latest release of RStudio (instructions for using **rticles** without RStudio are also provided).
-
-### Using rticles from RStudio
-
-To use **rticles** from RStudio:
+To use **resume** from RStudio:
 
 1) Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
 
-2) Install the **rticles** package: 
-    
-    install.packages("rticles", type = "source")
-    
-3) Use the **New R Markdown** dialog to create an article from one of the templates:
+2) Install the development version from GitHub:
 
- ![New R Markdown](http://rmarkdown.rstudio.com/images/new_r_markdown.png)
-    
-    
+```r
+devtools::install_github("jacekpardyak/resume")
+```    
+
+3) Use the **New R Markdown** dialog to create resume or cover letter from appropriate template:
+
+ ![New R Markdown](new_r_markdown.png)
+
+
 ### Using rticles outside of RStudio
 
 1) Install [pandoc](http://johnmacfarlane.net/pandoc/) using the [instructions for your platform](https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md).
