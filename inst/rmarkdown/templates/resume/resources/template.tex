@@ -31,7 +31,7 @@ $endfor$
 \section{EDUCATION} 
 
 $for(education)$
-    \uppercase{$education.school$} \emph{$education.title$}, $education.field$, $education.year$, $education.notes$ $if(education.continue)$\\$endif$
+    \uppercase{$education.school$} \emph{$education.title$}, $education.field$ ($education.year$)\\ $education.notes$ $if(education.continue)$\\$endif$
 $endfor$
 
   
