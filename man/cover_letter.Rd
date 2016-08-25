@@ -2,7 +2,7 @@
 % Please edit documentation in R/cover_letter.R
 \name{cover_letter}
 \alias{cover_letter}
-\title{Template to build a Cover Letter.}
+\title{Template to build a Cover letter.}
 \usage{
 cover_letter(..., keep_tex = TRUE)
 }
@@ -16,13 +16,14 @@ R Markdown output format to pass to
   \code{\link[rmarkdown:render]{render}}
 }
 \description{
-Template for creating a Cover Letter in R Studio. First create a new R Markdown document from template "Cover Letter" then modify it and knit PDF output.
+First create a new R Markdown document from template Cover Letter then modify it 
+and knit PDF output.
 }
 \examples{
 
 \dontrun{
 library(rmarkdown)
-draft("MyCoverLetter.Rmd", template = "cover_letter", package = "resume")
+draft("MyArticle.Rmd", template = "cover_letter", package = "resumeR")
 }
 
 }

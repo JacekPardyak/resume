@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1 ]{fontenc}
 \usepackage[ french ,english]{babel}
-\usepackage{hyperref}
+\usepackage{hyperref}  % uses hyperlinks
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{latexsym}   % to get the \Box symbol
@@ -45,7 +45,7 @@ $endfor$
 
 \section{RECENT WORK EXPERIENCE}
 $for(experience)$
-    \textbf{\uppercase{$experience.employer$}}, $experience.city$ \\ \emph{$experience.position$} ($experience.period$)\\ $experience.decription$ $if(experience.continue)$\\$endif$
+    \textbf{\uppercase{$experience.employer$}}, $experience.city$ \\ \emph{$experience.position$} ($experience.period$)\\ $experience.description$ $if(experience.continue)$\\$endif$
 $endfor$
 
 

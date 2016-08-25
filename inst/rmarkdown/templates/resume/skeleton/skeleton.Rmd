@@ -10,7 +10,7 @@ contact:
 
   
 profile: >
-  Jacek is an experienced Data Scientist at Atos Consulting (previously at GDC). He possesses strong problem solving and analytical skills. He is also trained and experienced in the field of data science, big data, data analytics, business intelligence, information analysis, software engineering and IT consultancy. He worked for clients in various sectors, which includes media, retail and telco. He is recognized for his ability to talk to stakeholders on the business, scientific and technical level. Clients appreciate his pragmatic and practical result-focused approach.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
 
 skills:
   - category: Applications
@@ -40,37 +40,26 @@ experience:
     city: Amstelveen, Netherlands
     position: Data Scientist
     period: December 2015 - Present
-    decription: Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system.
+    description: Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system.
     continue: true
   - employer: Atos Polska
     city: Warsaw, Poland
     position: Data Scientist
     period: February 2015 - December 2015
-    decription: Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system. Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. 
+    description: Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system. Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. 
     continue:
     
 outside-work:
-  - accomplishment: My first accomplishment
+  - accomplishment: Created R package resume (https://github.com/JacekPardyak/resume)
     continue: true  
-  - accomplishment: My second accomplishment
+  - accomplishment: Has been recognized by the Dutch police for daring attitude (http://bit.ly/2aNdf6D)
     continue:
   
 preamble: >
-  # add packages if needed
-  
+  \usepackage{amsmath}
+  \usepackage{hyperref}
 output: resume::resume
 
 ---
 
-# Introduction
 
-This template demonstrates some of the basic latex you'll need to know to create a JSS article.
-
-# R code
-
-Can be inserted in regular R markdown blocks.
-
-```{r}
-x <- 1:10
-x
-```

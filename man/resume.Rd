@@ -2,7 +2,7 @@
 % Please edit documentation in R/resume.R
 \name{resume}
 \alias{resume}
-\title{Template to build a Resume.}
+\title{Template to build Resume.}
 \usage{
 resume(..., keep_tex = TRUE)
 }
@@ -16,13 +16,14 @@ R Markdown output format to pass to
   \code{\link[rmarkdown:render]{render}}
 }
 \description{
-Template for creating a Resume in R Studio. First create a new R Markdown document from template "Resume" then modify it and knit PDF output.
+First create a new R Markdown document from template Resume then modify it 
+and knit PDF output.
 }
 \examples{
 
 \dontrun{
 library(rmarkdown)
-draft("MyResume.Rmd", template = "resume", package = "resume")
+draft("MyArticle.Rmd", template = "resume", package = "resume")
 }
 
 }

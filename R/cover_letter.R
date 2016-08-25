@@ -1,8 +1,7 @@
-#' Journal of Statistical Software (JSS) format.
+#' Template to build a Cover letter.
 #'
-#' Format for creating a Journal of Statistical Software (JSS) articles. Adapted
-#' from
-#' \href{http://www.jstatsoft.org/about/submissions}{http://www.jstatsoft.org/about/submissions}.
+#' First create a new R Markdown document from template Cover Letter then modify it 
+#' and knit PDF output.
 #'
 #' @inheritParams rmarkdown::pdf_document
 #' @param ... Arguments to \code{rmarkdown::pdf_document}
