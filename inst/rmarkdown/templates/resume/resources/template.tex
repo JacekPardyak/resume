@@ -31,7 +31,7 @@ $endfor$
 \section{EDUCATION} 
 
 $for(education)$
-    \uppercase{$education.school$} \emph{$education.title$}, $education.field$ ($education.year$)\\ $education.notes$ $if(education.continue)$\\$endif$
+    \textbf{\uppercase{$education.school$}} \emph{$education.title$}, $education.field$ ($education.year$)\\ $education.notes$ $if(education.continue)$\\$endif$
 $endfor$
 
   
@@ -54,11 +54,12 @@ $endfor$
 %%$for(author)$
 %%    $author.name$ wrote $author.book$
 %%$endfor$
-
+%%\begin{itemize}
 $for(outside-work)$
-    $outside-work.accomplishment$$if(outside-work.continue)$\\$endif$
+%%\item
+\textbf{-} $outside-work.accomplishment$$if(outside-work.continue)$\\$endif$
 $endfor$
-
+%%\end{itemize}
 \end{resume}
 \end{document}
 
