@@ -1,0 +1,59 @@
+---
+name: FirstName LastName
+    
+contact:
+    address: Applicant Address with Street, City, Zip Code
+    telephone: +48 999 000 666
+    email: "e.mail.at.e.mail"
+    url: https://mysite.com
+    extra:
+    
+output: resume::curriculum_vitae
+
+profile: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. 
+  
+experience:
+  - employer: ACME, Inc
+    city: Amstelveen, Netherlands
+    position: Data Scientist
+    period: December 2015 - Present
+    description: 
+    - item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+    - item: Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
+    - item: Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
+    - item:  Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - item: Pellentesque auctor nisi id magna consequat JavaScript sagittis.
+    - item: Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
+    continue: true
+  - employer: AJAX Hosting
+    city: Warsaw, Poland
+    position: Data Scientist
+    period: February 2015 - December 2015
+    description:
+    - item: Assisted in teaching responsibilities for circuits and electronics courses.
+    - item: Organized and implemented the speech processing lab at Rensselaer. 
+    - item: Authored several FORTRAN programs for Prime 500 system. 
+    - item: Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. 
+    - item: Derived SPICE model for short-channel MOS devices. 
+    continue:
+  
+education:
+-   school: "Hudson University"
+    title: PhD Candidate
+    field: Computer Science
+    year: 2009
+    notes: GPA 3.955
+-   school: "Smallville College"
+    title: Master of Science
+    field: Mathematics
+    year: 2004
+    notes: Summa Cum Laude, Member of Pi Mu Epsilon (a national honorary mathematics society)
+---
+
+<!-- Custom LaTeX, such as an atheltics section can be used -->
+\begin{rSection}{Athletics}
+\textbf{Ice Hockey} \emph{Goaltender} | \textbf{Hudson University} | 2000--2004 \\
+\textbf{Curling} \emph{Vice Skip} | \textbf{Hudson University} | 2000--2004
+\end{rSection}
+

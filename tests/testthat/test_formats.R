@@ -42,3 +42,4 @@ test_format <- function(name, file_check = TRUE, os_skip = NULL) {
 
 test_format("cover_letter")
 test_format("resume")
+test_format("curriculum_vitae")
