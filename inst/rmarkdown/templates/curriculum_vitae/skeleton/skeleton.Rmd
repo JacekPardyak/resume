@@ -8,8 +8,6 @@ contact:
     url: https://mysite.com
     extra:
     
-output: resume::curriculum_vitae
-
 profile: >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. 
   
@@ -49,6 +47,16 @@ education:
     field: Mathematics
     year: 2004
     notes: Summa Cum Laude, Member of Pi Mu Epsilon (a national honorary mathematics society)
+    
+skills:
+  - category: Applications
+    list: Maxima, R, R Studio, Weka, MADlib, MLlib
+    continue: true
+  - category: Programming
+    list: R, Python, C/C++
+    continue: 
+
+output: resume::curriculum_vitae
 ---
 
 <!-- Custom LaTeX, such as an atheltics section can be used -->

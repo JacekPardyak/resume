@@ -43,14 +43,14 @@ $endfor$
 $endfor$
 \end{rSection}
 
-  \begin{rSection}{Technical Strengths}
+\begin{rSection}{Skills}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-      Protocols \& APIs & XML, JSON, SOAP, REST \\
-      Databases & MySQL, PostgreSQL, Microsoft SQL \\
-      Tools & SVN, Vim, Emacs
+$for(skills)$
+      $skills.category$ & $skills.list$ \\
+%%\item $experience.description.item$
+$endfor$
     \end{tabular}
-  \end{rSection}
+\end{rSection}
 
 
 $body$
