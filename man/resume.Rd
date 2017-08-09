@@ -27,4 +27,3 @@ draft("MyArticle.Rmd", template = "resume", package = "resume")
 }
 
 }
-

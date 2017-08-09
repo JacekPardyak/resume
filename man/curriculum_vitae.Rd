@@ -27,4 +27,3 @@ draft("MyCV.Rmd", template = "curriculum_vitae", package = "resume")
 }
 
 }
-

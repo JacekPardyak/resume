@@ -27,4 +27,3 @@ draft("MyArticle.Rmd", template = "cover_letter", package = "resumeR")
 }
 
 }
-
