@@ -36,14 +36,6 @@ $for(education)$
 $endfor$
 
   
-%%$for(education)$
-%%$if(education.school)$
-%%$education.school$$if(education.title)$ ($education.title$)$endif$
-%%$else$
-%%$education$
-%%$endif$
-%%$endfor$
-
 \section{RECENT WORK EXPERIENCE}
 $for(experience)$
     \textbf{\uppercase{$experience.employer$}}, $experience.city$ \\ \emph{$experience.position$} ($experience.period$)\\ $experience.description$ $if(experience.continue)$\\$endif$
@@ -52,17 +44,16 @@ $endfor$
 
 \section{OUTSIDE WORK ACCOMPLISHMENTS}  
 
-%%$for(author)$
-%%    $author.name$ wrote $author.book$
-%%$endfor$
-%%\begin{itemize}
 $for(outside-work)$
-%%\item
 \textbf{*} $outside-work.accomplishment$$if(outside-work.continue)$\\$endif$
 $endfor$
-%%\end{itemize}
 
-%%\bullet
+\section{REFEREES}  
+
+$for(referee)$
+\textbf{\uppercase{$referee.full_name$}}$referee.job_title$$referee.current_contact_details$$if(referee.continue)$\\$endif$
+$endfor$
+
 
 \end{resume}
 \end{document}
