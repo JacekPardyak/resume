@@ -50,9 +50,11 @@ experience:
     continue:
     
 outside-work:
-  - accomplishment: Created R package resume (https://github.com/JacekPardyak/resume)
+  - title: R package resume
+    accomplishment: (https://github.com/JacekPardyak/resume)
     continue: true  
-  - accomplishment: Has been recognized by the Dutch police for daring attitude (http://bit.ly/2aNdf6D)
+  - title: Python script
+    accomplishment: for daring attitude (http://bit.ly/2aNdf6D)
     continue:
 
 referee:
