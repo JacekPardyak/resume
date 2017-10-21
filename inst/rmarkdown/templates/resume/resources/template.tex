@@ -50,7 +50,7 @@ $endfor$
 \section{REFEREES}  
 
 $for(referee)$
-\textbf{\uppercase{$referee.full_name$}}$referee.job_title$$referee.current_contact_details$$if(referee.continue)$\\$endif$
+\textbf{\uppercase{$referee.full_name$}} \emph{$referee.job_title$} $referee.current_contact_details$$if(referee.continue)$\\$endif$
 $endfor$
 
 

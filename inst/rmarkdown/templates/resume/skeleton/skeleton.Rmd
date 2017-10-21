@@ -59,9 +59,14 @@ outside-work:
 
 referee:
   - full_name: Jon Doe
-  - job_title: Department Director
-  - current_contact_details: (+31) 567 432 222 
-    continue:  
+    job_title: Department Director
+    current_contact_details: (+31) 567 432 222 
+    continue: true
+  - full_name: Forrest Gump
+    job_title: Partner
+    current_contact_details: (+48) 567 432 222 
+    continue: 
+    
 preamble: >
   \usepackage{amsmath}
   \usepackage{hyperref}
