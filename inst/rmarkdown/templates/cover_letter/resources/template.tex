@@ -5,14 +5,13 @@
 \usepackage{amssymb}
 \usepackage{newcent}
 \usepackage{graphicx}
-\address{$applicant.address1$ \\ $applicant.address2$ \\ 
-$if(applicant.address3)$ $applicant.address3$\\$endif$ }
+\address{$applicant.name$ \\ $applicant.address1$ \\ $applicant.address2$ \\ $if(applicant.address3)$ $applicant.address3$\\$endif$ }
 
 % \signature{$applicant.name$} 
 \begin{document} 
 \begin{letter}{$employer.name$ \\ $employer.address1$ \\ $employer.address2$ \\ $employer.address3$} 
 \opening{Dear Recruiting Team,} 
-With this letter I hereby wish to apply for the \textbf{$job.title$} position at $employer.name$ in $job.location$ Amsterdam.
+With this letter I hereby wish to apply for the \textbf{$job.title$} position at $employer.name$ in $job.location$.
 
 $abstract$
 
