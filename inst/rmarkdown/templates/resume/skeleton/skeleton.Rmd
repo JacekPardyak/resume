@@ -36,13 +36,13 @@ education:
     continue: 
 
 experience:
-  - employer: Atos Consulting
+  - employer: ABC
     city: Amstelveen, Netherlands
     position: Data Scientist
     period: December 2015 - Present
     description: Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system.
     continue: true
-  - employer: Atos Polska
+  - employer: CDE
     city: Warsaw, Poland
     position: Data Scientist
     period: February 2015 - December 2015

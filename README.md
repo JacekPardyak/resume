@@ -5,26 +5,6 @@ That documents composition and formatting can be done using lightweight [markdow
 
 ### Using resume
 
-To use **resume** from RStudio:
-
-1) Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
-
-2) Install the development version from GitHub:
-
-```r
-devtools::install_github("jacekpardyak/resume")
-```    
-
-3) Use the **New R Markdown** dialog to create resume or cover letter from appropriate template:
-
- ![New R Markdown](./man/figures/Capture1.PNG)
-
-4) Modify the new created **R Markdown** document:
-
- ![Modify R Markdown](./man/figures/Capture2.PNG)
-
-5) Use the **Knit** button to produce resulting document:
-
- ![PDF from R Markdown](./man/figures/Capture3.PNG)
+Please refer to:
 
 
