@@ -1,8 +1,8 @@
 Package: resume
 Type: Package
 Title: Resume and Cover Letter Builder
-Version: 0.2
-Date: 2017-08-03
+Version: 0.3
+Date: 2019-03-29
 Authors@R: c(
   person("Jacek", "Pardyak", role = c("aut", "cre"), email = "jacek.pardyak@gmail.com")
   )
