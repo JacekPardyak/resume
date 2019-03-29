@@ -19,11 +19,3 @@ R Markdown output format to pass to
 First create a new R Markdown document from template Resume then modify it 
 and knit PDF output.
 }
-\examples{
-
-\dontrun{
-library(rmarkdown)
-draft("MyArticle.Rmd", template = "resume", package = "resume")
-}
-
-}
