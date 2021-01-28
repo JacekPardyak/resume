@@ -1,3 +1,1 @@
-Please read first this article:
-  
-  http://rpubs.com/JacekPardyak/Resume
+Package documentation: https://jacekpardyak.github.io/Resume/
