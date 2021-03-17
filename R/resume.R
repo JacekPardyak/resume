@@ -11,7 +11,7 @@
 #'
 #' @examples
 #'
-#' \dontrun{
+#' \dontrun{}
 #' @export
 resume <- function(..., keep_tex = TRUE) {
 

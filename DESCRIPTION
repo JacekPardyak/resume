@@ -1,8 +1,8 @@
 Package: resume
 Type: Package
 Title: Resume and Cover Letter Builder
-Version: 0.4
-Date: 2020-11-22
+Version: 0.5
+Date: 2021-03-17
 Authors@R: c(
   person("Jacek", "Pardyak", role = c("aut", "cre"), email = "jacek.pardyak@gmail.com")
   )
@@ -12,5 +12,6 @@ Description: A suite of custom R Markdown formats and templates for
 License: GPL-3
 Imports: utils, rmarkdown, knitr, yaml
 SystemRequirements: GNU make
-RoxygenNote: 7.0.0
+Encoding: UTF-8
+RoxygenNote: 7.1.1
 Suggests: testthat
