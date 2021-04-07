@@ -70,7 +70,7 @@ referee:
 preamble: >
   \usepackage{amsmath}
   \usepackage{hyperref}
-output: resume::resume
+output: resume::curriculum_vitae
 
 ---
 

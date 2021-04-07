@@ -2,28 +2,28 @@
 % Please edit documentation in R/resume.R
 \name{resume}
 \alias{resume}
-\title{Template to build Resume.}
+\alias{templ_resume}
+\title{Steve's Statement Template}
 \usage{
-resume(..., keep_tex = TRUE)
+resume(...)
+
+templ_resume()
 }
 \arguments{
-\item{...}{Arguments to \code{rmarkdown::pdf_document}}
-
-\item{keep_tex}{Keep the intermediate tex file used in the conversion to PDF}
-}
-\value{
-R Markdown output format to pass to
-  \code{\link[rmarkdown:render]{render}}
+\item{...}{Arguments to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document}}.}
 }
 \description{
-First create a new R Markdown document from template Resume then modify it 
-and knit PDF output.
+A template for what I term "statements." These are things like research statements and teaching statements when I'm
+applying for jobs or doing end-of-the-semester busy work for the proverbial "ball and chain."
 }
-\examples{
+\section{About YAML header fields}{
+This section documents some of the YAML fields to know
+for this template.\tabular{ll}{
+   FIELD \tab DESCRIPTION \cr
+   \code{title} \tab title of the document, appears on first row \cr
+   \code{author} \tab name of the author, appears on second row \cr
+   \code{affiliation} \tab institutional affiliation, appears on third row \cr
+   \code{email} \tab your email, for the fourth row \cr
+}
+}
 
-\dontrun{
-library(rmarkdown)
-draft("resume.Rmd", template = "resume", package = "resume")
-}
-
-}
