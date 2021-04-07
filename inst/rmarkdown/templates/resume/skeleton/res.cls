@@ -2,7 +2,7 @@
 %    for LaTeX version 2.09
 % Copyright (C) 1988,1989 by Michael DeCorte
 
-\typeout{Document Style `res' <26 Sep 89>.}
+\typeout{Document Style `resume' <26 Sep 89>.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % res.sty
@@ -180,7 +180,7 @@
 % write docs to tell people how to use this
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{res}[2000/05/19 v1.4b Resume class]
+\ProvidesClass{resume}[2000/05/19 v1.4b Resume class]
 
 %\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 %\DeclareOption{12pt}{\renewcommand\@ptsize{2}}

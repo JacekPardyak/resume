@@ -1,6 +1,6 @@
-#' Template to build Resume.
+#' Template to build a Curriculum Vitae.
 #'
-#' First create a new R Markdown document from template Resume then modify it 
+#' First create a new R Markdown document from template Curriculum Vitae then modify it 
 #' and knit PDF output.
 #'
 #' @inheritParams rmarkdown::pdf_document
@@ -13,13 +13,13 @@
 #'
 #' \dontrun{
 #' library(rmarkdown)
-#' draft("resume.Rmd", template = "resume", package = "resume")
+#' draft("cv.Rmd", template = "curriculum_vitae", package = "resume")
 #' }
 #'
 #' @export
-resume <- function(..., keep_tex = TRUE) {
+curriculum_vitae <- function(..., keep_tex = TRUE) {
 
-  template <- find_resource("resume", "template.tex")
+  template <- find_resource("curriculum_vitae", "template.tex")
 
   base <- inherit_pdf_document(..., template = template, keep_tex = keep_tex)
 

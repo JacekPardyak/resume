@@ -1,0 +1,77 @@
+---
+name: CVNAME
+    
+contact:
+    address: Applicant Address with Street, City, Zip Code
+    telephone: +48 999 000 666
+    email: e.mail@e.mail
+    url: https://mysite.com
+    extra: 
+
+  
+profile: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+
+skills:
+  - category: Applications
+    list: Maxima, R, R Studio, Weka, MADlib, MLlib
+    continue: true
+  - category: Programming
+    list: R, Python, C/C++
+    continue: 
+
+education:
+  - school: TUV University of Leiden
+    title: PhD Candidate
+    field: Computer Science
+    year: 1998
+    notes: Thesis in preparation
+    continue: true
+  - school: University of life
+    title: Master of Science
+    field: Mathematics
+    year: 1996
+    notes: Thesis in the area of Statistics
+# leave this attribute empty to close the list, otherwise extra "break line" will be added
+    continue: 
+
+experience:
+  - employer: ABC
+    city: Amstelveen, Netherlands
+    position: Data Scientist
+    period: December 2015 - Present
+    description: Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system.
+    continue: true
+  - employer: CDE
+    city: Warsaw, Poland
+    position: Data Scientist
+    period: February 2015 - December 2015
+    description: Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system. Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. 
+    continue:
+    
+outside-work:
+  - title: R package resume
+    accomplishment: (https://github.com/JacekPardyak/resume)
+    continue: true  
+  - title: Python script
+    accomplishment: for daring attitude (http://bit.ly/2aNdf6D)
+    continue:
+
+referee:
+  - full_name: Jon Doe
+    job_title: Department Director
+    current_contact_details: (+31) 567 432 222 
+    continue: true
+  - full_name: Forrest Gump
+    job_title: Partner
+    current_contact_details: (+48) 567 432 222 
+    continue: 
+    
+preamble: >
+  \usepackage{amsmath}
+  \usepackage{hyperref}
+output: resume::resume
+
+---
+
+
