@@ -3,7 +3,7 @@
 \name{resume}
 \alias{resume}
 \alias{templ_resume}
-\title{Steve's Statement Template}
+\title{Resume}
 \usage{
 resume(...)
 
@@ -13,17 +13,16 @@ templ_resume()
 \item{...}{Arguments to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document}}.}
 }
 \description{
-A template for what I term "statements." These are things like research statements and teaching statements when I'm
-applying for jobs or doing end-of-the-semester busy work for the proverbial "ball and chain."
+A template for Résumé documents
 }
 \section{About YAML header fields}{
 This section documents some of the YAML fields to know
 for this template.\tabular{ll}{
    FIELD \tab DESCRIPTION \cr
-   \code{title} \tab title of the document, appears on first row \cr
-   \code{author} \tab name of the author, appears on second row \cr
-   \code{affiliation} \tab institutional affiliation, appears on third row \cr
-   \code{email} \tab your email, for the fourth row \cr
+   \code{name} \tab your name and surname \cr
+   \code{contact} \tab address, telephone,  email, web \cr
+   \code{profile} \tab short profile summary \cr
+   \code{...} \tab the rest \cr
 }
 }
 

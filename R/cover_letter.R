@@ -1,7 +1,6 @@
-#' Steve's Statement Template
+#' Resume Templates
 #'
-#' A template for what I term "statements." These are things like research statements and teaching statements when I'm
-#' applying for jobs or doing end-of-the-semester busy work for the proverbial "ball and chain."
+#' A template for Cover Letter documents
 #'
 #' # About YAML header fields
 #'

@@ -5,7 +5,7 @@ contact:
     address: Applicant Address with Street, City, Zip Code
     telephone: +48 999 000 666
     email: e.mail@e.mail
-    url: https://mysite.com
+    web: https://mysite.com
     extra: 
 
   

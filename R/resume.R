@@ -1,7 +1,6 @@
-#' Steve's Statement Template
+#' Resume
 #'
-#' A template for what I term "statements." These are things like research statements and teaching statements when I'm
-#' applying for jobs or doing end-of-the-semester busy work for the proverbial "ball and chain."
+#' A template for Résumé documents
 #'
 #' # About YAML header fields
 #'
@@ -11,10 +10,10 @@
 #'
 #' | FIELD  | DESCRIPTION |
 #' | ------ | ----------- |
-#' | `title` | title of the document, appears on first row |
-#' | `author` | name of the author, appears on second row |
-#' | `affiliation` | institutional affiliation, appears on third row |
-#' | `email` | your email, for the fourth row |
+#' | `name` | your name and surname |
+#' | `contact` | address, telephone,  email, web|
+#' | `profile` | short profile summary |
+#' | `...` | the rest |
 #'
 #' @inheritParams rmarkdown::pdf_document
 #' @param ... Arguments to [`rmarkdown::pdf_document`].
