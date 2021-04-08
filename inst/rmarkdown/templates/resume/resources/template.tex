@@ -1,12 +1,12 @@
 % LaTeX resume using res.cls
-\documentclass[a4paper, line, 11pt]{res} % default is 10 pt
+\documentclass[a4paper, line, 11pt]{resume} % default is 10 pt
 \usepackage[utf8]{inputenc}
-\usepackage[T1 ]{fontenc}
-\usepackage[polish ,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[polish, english]{babel}
 \usepackage{hyperref}  % uses hyperlinks
 \usepackage{amsmath}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+%\usepackage{newcent}   % uses new century schoolbook postscript font
 \usepackage{latexsym}   % to get the \Box symbol
 \setlength{\textheight}{10in} % increase text height to fit resume on 1 page
 \topmargin=-0.5in % start text higher on the page
@@ -15,7 +15,7 @@
  
 \name{$name$} 
 \address{$if(contact.address)$$contact.address$\\$endif$$if(contact.telephone)$Tel: $contact.telephone$$endif$}        
-\address{$if(contact.email)$E-mail: $contact.email$$endif$$if(contact.url)$\\ Web: $contact.web$$endif$$if(contact.extra)$$contact.extra$$endif$}
+\address{$if(contact.email)$E-mail: $contact.email$$endif$$if(contact.web)$\\ Web: $contact.web$$endif$$if(contact.extra)$$contact.extra$$endif$}
   
                         
 \begin{resume}                         

@@ -68,8 +68,10 @@ referee:
     continue: 
     
 preamble: >
-  \usepackage{amsmath}
-  \usepackage{hyperref}
+  %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+  %\usepackage{newcent}   % uses new century schoolbook postscript font
+  %\usepackage{amsmath}
+  %\usepackage{hyperref}
 output: resume::resume
 
 ---

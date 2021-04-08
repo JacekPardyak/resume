@@ -7,39 +7,58 @@
 \noindent
 \begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
 {
-    \Large{Jacek Pardyak} \newline
+    \Large{$name$} \newline
     \small{
         \clink{
-            \href{mailto:johndoe@mailme.com}{johndoe@mailme.com} \textbf{·} 
-            {\fontdimen2\font=0.75ex +1 2345 6789} 
+            \href{}{$contact.email$}  
             \textbf{·} 
-            \href{https://johnmyweb.com}{johnmyweb.com}
-        } \newline
-        New York, USA
-    }
-} & 
+            \href{}{$contact.web$}
+        } 
+        \newline
+            {\fontdimen2\font=0.75ex $contact.telephone$} 
+         \newline
+         {\fontdimen2\font=0.75ex $contact.address$}
+        \newline
+        $headline$
+}
+}
+
+& 
 {
     \hfill
-    \includegraphics[width=2.8cm]{images/gr.png}
+    \includegraphics[width=5cm]{$image$}
 }
 \end{tabularx}
+
 \begin{center}
+
+
 \begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
 % left side %
 {
     \csection{EXPERIENCE}{\small
         \begin{itemize}
-            % item 1 %
-            \item \frcontent{Dream Company}{Senior Software Engineer - San Fransisco, CA}{Co-designer and co-implementor of five successive generations of Google’s crawling indexing and query retrieval systems.}{August 1999 onwards}
-            % item 2 %
-            \item \frcontent{Old Dream Company}{Senior Member of Technical Staff − Texas}{Designer and implementor of a system for retrieving and caching electronic commerce content including a crawler and custom full-text indexing system that allows flexible keyword searching of product information.}{February 1999 to August 1999}
+
+            $for(experience)$
+            
+             \item \frcontent{$experience.employer$ }{$experience.position$ − $experience.city$}{$experience.description$}{$experience.period$}
+
+$endfor$
+
+
+            
         \end{itemize}
     }
     \csection{EDUCATION}{\small
         \begin{itemize}
-            % item 1 %
-            \item \frcontent{Ph.D. Computer Science}{University of Washington}{}{1996}
-            \item \frcontent{B.S. Computer Engineering, CGPA: 3.6/4}{University of Minnesota}{}{1990}
+
+            $for(education)$
+            \item \frcontent{$education.title$}{$education.school$}{}{$education.year$}
+            
+$endfor$
+            
+            
+            
         \end{itemize}
     }
     \csection{AWARDS \& RECOGNITION}{\small
@@ -50,6 +69,11 @@
             \item \frcontent{Elon Musk Award}{State of Engineering}{}{2012}
             % item 3 %
             \item \frcontent{ACM Fellow}{Association for Computing Machinery}{}{2009}
+            
+            
+            
+            
+            
         \end{itemize}
     }
 } 
@@ -58,20 +82,35 @@
 % right side %
 {
     \csection{SKILLS}{\small
-        \begin{itemize}
-            \item \textbf{Technologies} \newline
-            {\footnotesize Golang, Python, C++, Tensorflow, Spanner, Bigtable, MapReduce, Google Cloud Platform,  Protocol Buffers}{}{}
-            \item \textbf{Patterns \& Practices} \newline
-            {\footnotesize Object Oriented Programming, Functional  Programming, CI \& CD, Microservices}
-            \item \textbf{Project Management} \newline
-            {\footnotesize Agile, Scrum, Google Bug Tracker, Google Workspace}
-        \end{itemize}
-    }
+       \begin{itemize}
+%            \item \textbf{Technologies} \newline
+%            {\footnotesize Golang, Python, C++, Tensorflow, Spanner, Bigtable, MapReduce, Google Cloud Platform,  Protocol Buffers}{}{}
+%            \item \textbf{Patterns \& Practices} \newline
+%            {\footnotesize Object Oriented Programming, Functional  Programming, CI \& CD, Microservices}
+%            \item \textbf{Project Management} \newline
+%            {\footnotesize Agile, Scrum, Google Bug Tracker, Google Workspace}
+  %          
+            $for(skills)$
+            \item \textbf{$skills.category$} \newline 
+           {\footnotesize $skills.list$ }
+           
+            $endfor$
+  
+        \end{itemize}}
+    
+    
+    
+    
     \csection{PROJECTS}{\small
         \begin{itemize}
             \item \frcontent{Tensorflow \clink{\href{https://tensorflow.org}{[tensorflow.org]}}}{An open-source machine-learning software library}{}{C++, Python, Bash}
             \item \frcontent{LevelDB \clink{\href{http://github.com/google/leveldb}{[github.com/google/leveldb]}}}{An open-source on-disk key-value store}{}{C++}
             \item \frcontent{Spanner \clink{\href{http://google.com/spanner}{[google.com/spanner]}}}{A scalable, multi-version, globally distributed, and synchronously replicated database}{}{C++, Java, Bash}
+            
+$for(projects)$
+        \item \frcontent{$projects.title$ \clink{\href{}{[$projects.url$]}}}{$projects.description$}{}{$projects.technologies$}
+$endfor$
+            
         \end{itemize}
     }
     \csection{OTHER HIGHLIGHTS}{\small
@@ -83,20 +122,22 @@
     \csection{HOBBIES \& INTERESTS}{\small
         \vspace{0.32cm}
         \begin{tabularx}{\linewidth}{@{}*{4}{>{\centering\arraybackslash}X}@{}}
-            {\centering
-            \includegraphics[width=0.8cm]{images/userexperience.png}
-            } &
-            {\centering
-            \includegraphics[width=0.8cm]{images/lamp.png}
-            } & 
-            {\centering
-            \includegraphics[width=0.8cm]{images/healthcare.png}
-            } &
-            {\centering
-            \includegraphics[width=0.8cm]{images/cauldron.png}
-            } \\
-            {\footnotesize UI/UX} & {\footnotesize Problem Solving} & {\footnotesize Healthcare} & {\footnotesize Open Source}
-        \end{tabularx}
+$for(hobbies)$
+{\centering
+\includegraphics[width=0.8cm]{$hobbies.file$} 
+}$if(hobbies.continue)$&$endif$ 
+$endfor$
+
+%            {\centering
+%            \includegraphics[width=0.8cm]{images/plants.png}
+%            } &
+
+\\
+
+$for(hobbies)$
+{\footnotesize $hobbies.name$} $if(hobbies.continue)$&$endif$ 
+$endfor$
+    \end{tabularx}
     }
 }
 \end{tabularx}
