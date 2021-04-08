@@ -60,28 +60,33 @@ outside-work:
     continue:
 
 projects:
-  - title: Saler
-    url: https://url.com
-    description: The greatest project ever
-    technologies: Python, R
-    continue: true
-  - title: Briler
-    url: https://url.com
-    description: A scalable, multi-version, globally distributed, and synchronously replicated database
-    technologies: Java, Python, R
-    continue: false
+  - title: Fleet Health Monitor - KLM
+    url: 
+    link:
+    description: dashboard and intelligence engine suggesting the next best action to improve the health of the fleet
+    technologies: R, Shiny
+  - title: R Library 'resume'
+    url: https://jacekpardyak.github.io/Resume
+    link: github.io/Resume/
+    description: for authoring Résumés, CVs and Cover Letters including this job application.
+    technologies: R, R Markdown, LaTex
+
+highlights:
+  - text: A book 'What are the Dutch singing about?' with song translations from Dutch to Polish written fully in R (https://jacekpardyak.github.io/Liedboek).
+  - text: R Tidyverse and Python TensorFlow tutorials on how to use them on Kaggle or Colab for NLP, psychology, horticulture, energy consumtion, horeca in the NL etc. (https://www.kaggle.com/jacekpardyak).  
+  - text: I lead 'Polen in Nederland' LGBT group.
 
 hobbies:
-  - name: Programming \& publishing
+  - name: Programming
     file: images/knitting.pdf
     continue: true
-  - name: Growing potted plants
+  - name: Plants
     file: images/plants.pdf
     continue: true
-  - name: Indoor swimming
+  - name: Swimming
     file: images/swimming.pdf
     continue: true    
-  - name: Cultural diversity
+  - name: Diversity
     file: images/diversity.pdf
     continue: false  
                 
@@ -92,3 +97,4 @@ output: resume::curriculum_vitae
 ---
 
 
+% https://github.com/prabhuomkar/latex-resume-template

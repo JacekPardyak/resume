@@ -20,13 +20,11 @@
          {\fontdimen2\font=0.75ex $contact.address$}
         \newline
         $headline$
-}
-}
-
+}}
 & 
 {
     \hfill
-    \includegraphics[width=5cm]{$image$}
+    \includegraphics[width=4cm]{$image$}
 }
 \end{tabularx}
 
@@ -103,20 +101,17 @@ $endfor$
     
     \csection{PROJECTS}{\small
         \begin{itemize}
-            \item \frcontent{Tensorflow \clink{\href{https://tensorflow.org}{[tensorflow.org]}}}{An open-source machine-learning software library}{}{C++, Python, Bash}
-            \item \frcontent{LevelDB \clink{\href{http://github.com/google/leveldb}{[github.com/google/leveldb]}}}{An open-source on-disk key-value store}{}{C++}
-            \item \frcontent{Spanner \clink{\href{http://google.com/spanner}{[google.com/spanner]}}}{A scalable, multi-version, globally distributed, and synchronously replicated database}{}{C++, Java, Bash}
-            
 $for(projects)$
-        \item \frcontent{$projects.title$ \clink{\href{}{[$projects.url$]}}}{$projects.description$}{}{$projects.technologies$}
+        \item \frcontent{$projects.title$ $if(projects.url)$ \clink{\href{}{[$projects.url$]}} $endif$ }{$projects.description$}{}{$projects.technologies$}
 $endfor$
-            
-        \end{itemize}
+ \end{itemize}
     }
+    
     \csection{OTHER HIGHLIGHTS}{\small
         \begin{itemize}
-            \item {\footnotesize Gave talk on \textit{Achieving Rapid Response Times in Large Online Services} at Berkeley AMPLab Cloud.}
-            \item {\footnotesize Led several teams across infrastructure, founded \textit{Google Brain} and was involved in hiring process.}
+$for(highlights)$
+        \item {\footnotesize $highlights.text$}
+$endfor$
         \end{itemize}
     }
     \csection{HOBBIES \& INTERESTS}{\small
@@ -126,13 +121,7 @@ $for(hobbies)$
 {\centering
 \includegraphics[width=0.8cm]{$hobbies.file$} 
 }$if(hobbies.continue)$&$endif$ 
-$endfor$
-
-%            {\centering
-%            \includegraphics[width=0.8cm]{images/plants.png}
-%            } &
-
-\\
+$endfor$ \\
 
 $for(hobbies)$
 {\footnotesize $hobbies.name$} $if(hobbies.continue)$&$endif$ 
