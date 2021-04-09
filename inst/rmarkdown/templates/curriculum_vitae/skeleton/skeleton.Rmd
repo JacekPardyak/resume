@@ -7,13 +7,13 @@ contact:
     address: 2523 CH Den Haag
     telephone: 06 20786342
     email: jacek.pardyak@gmail.com
-    web: https://jacekpardyak.github.io/
+    web: jacekpardyak.github.io/
     extra: 
 
   
 headline: >
   Software Developer (Python \& R)
-
+  
 skills:
   - category: Applications
     list: Maxima, R, R Studio, Weka, MADlib
@@ -62,13 +62,11 @@ outside-work:
 projects:
   - title: Fleet Health Monitor - KLM
     url: 
-    link:
     description: dashboard and intelligence engine suggesting the next best action to improve the health of the fleet
     technologies: R, Shiny
-  - title: R Library 'resume'
-    url: https://jacekpardyak.github.io/Resume
-    link: github.io/Resume/
-    description: for authoring Résumés, CVs and Cover Letters including this job application.
+  - title: Library
+    url: jacekpardyak.github.io/Resume
+    description: for authoring Résumés, CVs and Cover Letters in R (incl. this job application).
     technologies: R, R Markdown, LaTex
 
 highlights:

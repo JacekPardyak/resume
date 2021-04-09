@@ -9,22 +9,25 @@
 {
     \Large{$name$} \newline
     \small{
-        \clink{
-            \href{}{$contact.email$}  
-            \textbf{·} 
-            \href{}{$contact.web$}
-        } 
-        \newline
-            {\fontdimen2\font=0.75ex $contact.telephone$} 
+%        \clink{
+        \href{mailto:}{\tt $contact.email$}
+        \textbf{·} 
+            \href{http://$contact.web$}{\tt $contact.web$} 
+        \textbf{·}   
+ %       } 
+        {\fontdimen2\font=0.75ex $contact.telephone$} 
          \newline
          {\fontdimen2\font=0.75ex $contact.address$}
         \newline
-        $headline$
+        \frcontent{$headline$}{}{}{}
+        
+% \href{http://$url$}{$url$}  
+
 }}
 & 
 {
     \hfill
-    \includegraphics[width=4cm]{$image$}
+    \includegraphics[width=3cm]{$image$}
 }
 \end{tabularx}
 
@@ -102,9 +105,12 @@ $endfor$
     \csection{PROJECTS}{\small
         \begin{itemize}
 $for(projects)$
-        \item \frcontent{$projects.title$ $if(projects.url)$ \clink{\href{}{[$projects.url$]}} $endif$ }{$projects.description$}{}{$projects.technologies$}
+        \item \frcontent{$projects.title$ $if(projects.url)$ \href{http://$projects.url$}{\tt [$projects.url$]}$endif$ }{$projects.description$}{}{$projects.technologies$}
 $endfor$
  \end{itemize}
+ 
+% \href{http://$contact.web$}{\tt $contact.web$}
+ 
     }
     
     \csection{OTHER HIGHLIGHTS}{\small
