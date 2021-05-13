@@ -67,12 +67,9 @@ referee:
     current_contact_details: (+48) 567 432 222 
     continue: 
     
-preamble: >
-  %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-  %\usepackage{newcent}   % uses new century schoolbook postscript font
-  %\usepackage{amsmath}
-  %\usepackage{hyperref}
-output: resume::resume
+output:
+  resume::resume:
+    keep_tex: true
 
 ---
 

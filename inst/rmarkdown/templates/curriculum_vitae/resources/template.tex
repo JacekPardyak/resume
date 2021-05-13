@@ -5,29 +5,23 @@
 \fontfamily{ppl}\selectfont
 
 \noindent
-\begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
+\begin{tabularx}{\linewidth}{@{}m{1\textwidth} m{0\textwidth}@{}}
 {
-    \Large{$name$} \newline
+    \Large{$Personal_information.name$} \newline
     \small{
-%        \clink{
-        \href{mailto:}{\tt $contact.email$}
+        \href{mailto:}{\tt $Personal_information.email$}
         \textbf{·} 
-            \href{http://$contact.web$}{\tt $contact.web$} 
+            \href{http://$Personal_information.web$}{\tt $Personal_information.web$} 
         \textbf{·}   
- %       } 
-        {\fontdimen2\font=0.75ex $contact.telephone$} 
-         \newline
-         {\fontdimen2\font=0.75ex $contact.address$}
+        {\fontdimen2\font=0.75ex $Personal_information.telephone$} 
+        \textbf{·}   
+         {\fontdimen2\font=0.75ex $Personal_information.address$}
         \newline
-        \frcontent{$headline$}{}{}{}
-        
-% \href{http://$url$}{$url$}  
-
+        \frcontent{$Headline$}{}{}{}
 }}
 & 
 {
     \hfill
-    \includegraphics[width=3cm]{$image$}
 }
 \end{tabularx}
 
@@ -37,103 +31,88 @@
 \begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
 % left side %
 {
-    \csection{EXPERIENCE}{\small
+    \csection{WORK EXPERIENCE}{\small
         \begin{itemize}
 
-            $for(experience)$
+            $for(Work_experience)$
             
-             \item \frcontent{$experience.employer$ }{$experience.position$ − $experience.city$}{$experience.description$}{$experience.period$}
+             \item \frcontent{$Work_experience.employer$ }{$Work_experience.position$ − $Work_experience.city$}{$Work_experience.description$}{$Work_experience.period$}
 
 $endfor$
 
-
-            
-        \end{itemize}
+      \end{itemize}
     }
+%----------------------------------    
     \csection{EDUCATION}{\small
         \begin{itemize}
+            $for(Education)$
+            \item \frcontent{$Education.title$}{$Education.school$}{}{$Education.year$}
+            $endfor$
+        \end{itemize}
+    }
+%----------------------------------        
+\csection{DRIVING LICENSES}{\small
+\vspace{0.1cm}
+\begin{tabularx}{\linewidth}{@{}*{4}{>{\centering\arraybackslash}X}@{}}
+$for(Driving_licenses)$
+{\centering
+{\footnotesize $Driving_licenses.type$} \includegraphics[width=1.4cm]{$Driving_licenses.file$} 
+}$if(licenses.continue)$&$endif$ 
+$endfor$ \\
+\end{tabularx}
+}  
 
-            $for(education)$
-            \item \frcontent{$education.title$}{$education.school$}{}{$education.year$}
-            
-$endfor$
-            
-            
-            
-        \end{itemize}
-    }
-    \csection{AWARDS \& RECOGNITION}{\small
-        \begin{itemize}
-            % item 1 %
-            \item \frcontent{Fake Academy Fellow}{Fake Academy of Arts and Sciences}{}{2016}
-            % item 2 %
-            \item \frcontent{Elon Musk Award}{State of Engineering}{}{2012}
-            % item 3 %
-            \item \frcontent{ACM Fellow}{Association for Computing Machinery}{}{2009}
-            
-            
-            
-            
-            
-        \end{itemize}
-    }
+        
 } 
 % end left side %
 & 
 % right side %
 {
-    \csection{SKILLS}{\small
-       \begin{itemize}
-%            \item \textbf{Technologies} \newline
-%            {\footnotesize Golang, Python, C++, Tensorflow, Spanner, Bigtable, MapReduce, Google Cloud Platform,  Protocol Buffers}{}{}
-%            \item \textbf{Patterns \& Practices} \newline
-%            {\footnotesize Object Oriented Programming, Functional  Programming, CI \& CD, Microservices}
-%            \item \textbf{Project Management} \newline
-%            {\footnotesize Agile, Scrum, Google Bug Tracker, Google Workspace}
-  %          
-            $for(skills)$
-            \item \textbf{$skills.category$} \newline 
-           {\footnotesize $skills.list$ }
-           
-            $endfor$
-  
-        \end{itemize}}
-    
-    
-    
-    
-    \csection{PROJECTS}{\small
-        \begin{itemize}
-$for(projects)$
-        \item \frcontent{$projects.title$ $if(projects.url)$ \href{http://$projects.url$}{\tt [$projects.url$]}$endif$ }{$projects.description$}{}{$projects.technologies$}
+
+%----------------------------------    
+\csection{LANGUAGES}{\small
+\begin{tabularx}{\linewidth}{@{}*{3}{>{\centering\arraybackslash}X}@{}}
+{\centering \textbf{Language}} & {\centering \textbf{Oral}} & {\centering \textbf{Written}} \\
+$for(Languages)$ 
+\footnotesize $Languages.language$ & \footnotesize $Languages.oral$ & \footnotesize $Languages.written$ \\
 $endfor$
- \end{itemize}
- 
-% \href{http://$contact.web$}{\tt $contact.web$}
- 
-    }
-    
-    \csection{OTHER HIGHLIGHTS}{\small
+\end{tabularx}
+}
+
+%----------------------------------    
+\csection{COMPETENCES}{\small
         \begin{itemize}
-$for(highlights)$
-        \item {\footnotesize $highlights.text$}
+$for(Competences)$
+        \item { \textbf{$Competences.title$} \footnotesize $Competences.text$}
 $endfor$
         \end{itemize}
+    }      
+
+%----------------------------------    
+    \csection{OTHER HIGHLIGHTS}{\small
+        \begin{itemize}
+$for(Higlights)$
+        \item \frcontent{$Higlights.title$ $if(Higlights.url)$ \href{http://$Higlights.url$}{\tt [$Higlights.url_short$]}$endif$ }{$Higlights.description$}{}{$Higlights.technologies$}
+$endfor$
+ \end{itemize}
     }
-    \csection{HOBBIES \& INTERESTS}{\small
+
+%----------------------------------        
+    \csection{INTERESTS}{\small
         \vspace{0.32cm}
         \begin{tabularx}{\linewidth}{@{}*{4}{>{\centering\arraybackslash}X}@{}}
-$for(hobbies)$
+$for(Interests)$
 {\centering
-\includegraphics[width=0.8cm]{$hobbies.file$} 
-}$if(hobbies.continue)$&$endif$ 
+\includegraphics[width=0.8cm]{$Interests.file$} 
+}$if(Interests.continue)$&$endif$ 
 $endfor$ \\
 
-$for(hobbies)$
-{\footnotesize $hobbies.name$} $if(hobbies.continue)$&$endif$ 
+$for(Interests)$
+{\footnotesize $Interests.name$} $if(Interests.continue)$&$endif$ 
 $endfor$
     \end{tabularx}
     }
+% end right side
 }
 \end{tabularx}
 \end{center}

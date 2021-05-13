@@ -3,7 +3,7 @@
 \name{curriculum_vitae}
 \alias{curriculum_vitae}
 \alias{templ_curriculum_vitae}
-\title{Steve's Statement Template}
+\title{Resume Templates}
 \usage{
 curriculum_vitae(...)
 
@@ -13,8 +13,7 @@ templ_curriculum_vitae()
 \item{...}{Arguments to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document}}.}
 }
 \description{
-A template for what I term "statements." These are things like research statements and teaching statements when I'm
-applying for jobs or doing end-of-the-semester busy work for the proverbial "ball and chain."
+A template for Curriculum Vitae documents
 }
 \section{About YAML header fields}{
 This section documents some of the YAML fields to know

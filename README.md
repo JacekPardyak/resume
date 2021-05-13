@@ -27,7 +27,7 @@ New File &gt; R Markdown*. Here, select any template you’d like to use.
 
 <img src="./man/figures/Capture1.PNG" width="750px" style="display: block; margin: auto;" />
 
-The development version includes the following templates:
+This library includes the following templates:
 
 -   **Resume**: template for more classic, subdued style résumé.
     Appropriate when you are applying to companies with a more
@@ -46,6 +46,14 @@ Next step is to modify the new created **R Markdown** document:
 Finally use the **Knit** button to produce document like this:
 
 <img src="./man/figures/Capture3.PNG" width="750px" style="display: block; margin: auto;" />
+
+or like this:
+
+<img src="./man/figures/Capture4.PNG" width="750px" style="display: block; margin: auto;" />
+
+and like this:
+
+<img src="./man/figures/Capture4.PNG" width="750px" style="display: block; margin: auto;" />
 
 ## Possible problems
 

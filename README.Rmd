@@ -38,7 +38,7 @@ knitr::include_graphics("./man/figures/Capture1.PNG")
 ```
 
 
-The development version includes the following templates:
+This library includes the following templates:
 
 - **Resume**: template for more classic, subdued style résumé. Appropriate when you are applying to companies with a more traditional feel.
 - **Curriculum Vitae**: template for more flair two column résumé with some graphics. Appropriate when you are applying to companies with more of a start-up vibe.
@@ -57,6 +57,17 @@ Finally use the **Knit** button to produce document like this:
 knitr::include_graphics("./man/figures/Capture3.PNG")
 ```
 
+or like this:
+
+```{r, echo=FALSE, out.width = "750px", fig.align="center"}
+knitr::include_graphics("./man/figures/Capture4.PNG")
+```
+
+and like this:
+
+```{r, echo=FALSE, out.width = "750px", fig.align="center"}
+knitr::include_graphics("./man/figures/Capture4.PNG")
+```
 
 ## Possible problems
 
