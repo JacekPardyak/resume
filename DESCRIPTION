@@ -1,17 +1,15 @@
 Package: resume
 Type: Package
 Title: Resume and Cover Letter Builder
-Version: 0.5
-Date: 2021-03-17
+Version: 1.0
+Date: 2023-08-11
 Authors@R: c(
   person("Jacek", "Pardyak", role = c("aut", "cre"), email = "jacek.pardyak@gmail.com")
   )
 Maintainer: Jacek Pardyak <jacek.pardyak@gmail.com>
 Description: A suite of custom R Markdown formats and templates for
   authoring Latex-style Resumes and Cover Letters.
-License: GPL-3
-Imports: utils, rmarkdown, knitr, yaml
-SystemRequirements: GNU make
+RoxygenNote: 7.2.3
+License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.1.1
-Suggests: testthat
+Imports: rmarkdown

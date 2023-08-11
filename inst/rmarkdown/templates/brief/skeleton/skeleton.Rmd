@@ -1,0 +1,22 @@
+---
+applicant:
+    name: FirstName LastName
+    address: Applicant Address One Line
+    telephone: 080-613169
+    e-mail: jan.novak@ggmmaiil.com
+    signature: Signature.pdf  
+
+employer:
+    name: Employer Name
+    address1: Employer Address First
+    address2: Employer Address Second
+
+content: 
+  title:  'Senior Data Scientist'
+  head: 'Met deze brief wens ik hierbij te solliciteren naar de Data Scientist positie bij CBS in Den Haag.'
+  body: 'Zoals je kunt zien in mijn cv, coördineerde ik meerdere internationale teams en produceerde ik gelokaliseerde websites van hoge kwaliteit. Jarenlang zorgde ik voor de behoeften van de klant door professionele, behulpzame, hoogwaardige service en assistentie te bieden en te leveren voordat, tijdens en nadat aan de eisen van de klant was voldaan. Mijn verschillende rollen binnen internetgerelateerde bedrijven waren allemaal gericht op klanttevredenheid. Ik heb altijd geprobeerd de behoeften van de consument te begrijpen om de beste service te bieden. Fransman die op veel verschillende plaatsen woonde en werkte,'
+  tail: 'Lees meer over mijn kwalificaties door het bijgevoegde CV te lezen. Bij voorbaat hartelijk dank voor uw overweging. Mocht je nog vragen hebben over mijn kandidatuur, neem dan gerust contact met mij op via telefoon of e-mail.'
+
+output: resume::brief
+---
+

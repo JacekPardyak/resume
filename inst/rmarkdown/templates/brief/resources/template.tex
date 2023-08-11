@@ -1,0 +1,70 @@
+
+\documentclass{brief}      %% er is een optie 'adresrechts'
+\usepackage{newcent}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\maaketiketten %% werkt nog niet naar behoren
+ 
+\begin{document}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% briefhoofd %%%%%%%%%%%%%%%%%%%%%%%%%%
+% De gebruiker wordt geacht zijn eigen \briefhoofd te definieren,
+% of voorgedrukt briefpapier te gebruiken,
+% maar hij kan een redelijk standaard hoofd aangemeten krijgen
+% door \maakbriefhoofd.
+% \maakbriefhoofd{}{} {Werkgroep 13\\ de De Facto Standaard
+%                               \\ in Nederlandse \TeX pertise}
+ 
+% De PTT staat toe dat boven in het venster klein (5 a 6 punt)
+% een antwoordadres gedrukt wordt. Het hoeft natuurlijk niet.
+% En svp alleen voor binnenlands gebruik.
+\antwoordadres{$applicant.address$}
+ 
+%%%%%%%%%%%%%%%%%%% de referentieregel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\uwbriefvan{14 april 2021} % vier gegevens in de referentieregels
+%\datum{14 april 2021}    % hier mist alleen de 'uwkenmerk'
+%\uwkenmerk{job.title}      % volgorde en plaatsing ligt vast
+%\onskenmerk{job.title}      % volgorde en plaatsing ligt vast
+% datum wordt automatisch ingevuld wanneer niet gespecificeerd
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% voetregel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% maximaal vier gegevens, de gebruiker specificeert zowel het
+% kopje, als wat er onder komt. Gegevens worden geplaatst in de
+% opgegeven volgorde.
+% \voetitem{fax:}{12345 abc}
+\voetitem{e-mail:}{$applicant.e-mail$}
+\voetitem{telefoon:}{$applicant.telephone$}
+
+ 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% de brief zelf %%%%%%%%%%%%%%%%%%%%%%%%%%
+% bijna zoals in 'letter.sty', alleen zijn de commando's
+% nu in de nederlandse taal.
+\begin{brief}{$employer.name$ \\ $employer.address1$ \\ $employer.address2$ }
+ 
+\betreft{$content.title$}
+\opening{Geachte heer, mevrouw,}
+ 
+$content.head$
+
+$content.body$
+
+$content.tail$
+
+%Hoogachtend,
+ 
+\afsluiting{Met vriendelijke groet, \\
+\includegraphics[width = 3cm]{$applicant.signature$} \\ $applicant.name$}
+%\includegraphics[scale=0.3]{Signature.pdf}\\ J.G. Pardyak}
+\ondertekening{}
+
+
+
+\bijlagen{Curriculum Vitae}
+%\cc{}
+%\ps{}
+ 
+ 
+\end{brief}
+ \end{document}
+ 
