@@ -7,8 +7,6 @@ load_all()
 document()
 check()
 
-
-
 install()
 
 library(radomd)

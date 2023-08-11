@@ -51,7 +51,7 @@ knitr::include_graphics("./man/figures/Capture2.PNG")
 ```
 
 
-Finally use the **Knit** button to produce document like this:
+Finally use the **Knit** button to produce résumé document like this:
 
 ```{r, echo=FALSE, out.width = "750px", fig.align="center"}
 knitr::include_graphics("./man/figures/Capture3.PNG")
@@ -63,10 +63,10 @@ or like this:
 knitr::include_graphics("./man/figures/Capture4.PNG")
 ```
 
-and like this:
+And cover letter like this:
 
 ```{r, echo=FALSE, out.width = "750px", fig.align="center"}
-knitr::include_graphics("./man/figures/Capture4.PNG")
+knitr::include_graphics("./man/figures/Capture5.PNG")
 ```
 
 ## Possible problems
