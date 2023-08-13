@@ -26,8 +26,8 @@
   \begin{rSection}{Experience}
     $for(experience)$
     \begin{rSubsection}{$experience.employer$}{$experience.period$}{$experience.position$}{$experience.city$}
-    $for(experience.duties)$
-    \item $experience.duties.duty$
+    $for(experience.duty)$
+    \item $experience.duty$
     $endfor$
     \end{rSubsection}
     $endfor$
@@ -38,12 +38,12 @@
     \end{rSubsection}
   \end{rSection}
   
+  
   \begin{rSection}{Skills}
-    \begin{lSubsection}
-    $for(skills)$
-    \item $skills.skill$
-    $endfor$
-    \end{lSubsection}
+  $for(skills)$
+    \textbf{$skills.category$}: $skills.list$ \\
+%    $if(skills.continue)$\\$endif$
+  $endfor$
   \end{rSection}
 
 \end{document}

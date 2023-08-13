@@ -3,59 +3,66 @@
 \documentclass[a4paper, 11pt]{resume}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
 
-\name{FirstName LastName}
-\address{ 4489 Oxford Lane \\ San Antonio, PA 90024  }
-\address{ 4444444444 \\ jpublic@example.edu }
+\name{ Audra Hammond}
+\address{ Tampa \\ Florida}
+\address{ 555-813-4458 \\ \href{mailto:audra.hammond@email.com}{\nolinkurl{audra.hammond@email.com}}}
 
 \def\nameskip{\bigskip}
 \def\sectionskip{\medskip}
 
 \begin{document}
+  \begin{rSection}{Summary}
+  Sales manager with five years of experience eager to use relationship
+management, organizational and research skills to optimize sales
+strategies. 
+  \end{rSection}
 
   \begin{rSection}{Education}
-    {\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
-    { B.S. in Computer Science \& Engineering } \\
-    { Minor in Linguistics } \smallskip \\
-    { Member of Eta Kappa Nu } \\
-    { Member of Upsilon Pi Epsilon } \\
-    Overall GPA: 5.678
-  \end{rSection}
+        \begin{eSubsection}{University of Eastern Shore}{2003}{Bachelor
+of Arts in sales}{}
+     \end{eSubsection}
+        \begin{eSubsection}{Seinäjoki College,
+Finland}{1998}{Graduate}{}
+     \end{eSubsection}
+      \end{rSection}
+  
   
   \begin{rSection}{Experience}
-  
+        \begin{rSubsection}{Industry Plus Magazine}{February
+2022--Current}{Sales Manager}{Tampa, Florida}
+        \item Assist sales team to achieve profit goals, averaging
+\$200,000 in annual client revenue
+        \item Oversee development of a 15-member sales team by promoting
+results-driven strategies
+        \item Develop client acquisition and lead generation strategies
+by conducting market research
+        \item Project expected sales volume for existing accounts to
+properly allocate budget
+        \item Analyze budget to reduce expenditure and optimize profits
+        \end{rSubsection}
+        \begin{rSubsection}{Monkey Foot Publishing}{July 2018--February
+2022}{Assistant Relationship}{Tampa, Florida}
+        \item Developed a territory plan and make adjustments based on
+analysis of competitor behavior
+        \item Educated clients on new products and services to optimize
+upselling tactics
+        \item Maintained record of customer comments, complaints and
+inquiries
+        \end{rSubsection}
+        
     \begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
     \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-    \item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-    \item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-    \item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    \item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-    \item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
+    \item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae 
     \end{rSubsection}
-  
-    \begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-    \item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-    \item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-    \item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-    \item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-    \item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-    \end{rSubsection}
-
-    \begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-    \item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-    \item Maecenas convallis ullamcorper ultricies stylesheets.
-    \item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-    \item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
-    \end{rSubsection}
-  
   \end{rSection}
   
-  \begin{rSection}{Technical Strengths}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-      Protocols \& APIs & XML, JSON, SOAP, REST \\
-      Databases & MySQL, PostgreSQL, Microsoft SQL \\
-      Tools & SVN, Vim, Emacs
-    \end{tabular}
+  \begin{rSection}{Skills}
+    \begin{lSubsection}
+        \item Relationship management
+        \item Time management
+        \item Consultative sales
+        \item Communication
+        \end{lSubsection}
   \end{rSection}
 
 \end{document}

@@ -20,6 +20,7 @@
 \usepackage[parfill]{parskip}       % Do not indent paragraphs
 \usepackage{array}                  % required for boldface tabular columns
 \usepackage{ifthen}
+\usepackage{hyperref}               % uses hyperlinks
 
 \nofiles                            % .aux files are not needed for resumes
 \pagestyle{empty}                   % resumes do not need page numbers
@@ -103,6 +104,32 @@
   \\
   \emph{#3}                \hfill                  \emph{#4}% Stop a space
   }\smallskip
+  % \cdot used for bullets, items non-indented
+  \begin{list}{$\cdot$}{\leftmargin=0em}
+  \itemsep -0.5em \vspace{-0.5em}
+}{
+  \end{list}
+  \vspace{0.5em}
+}
+
+% Used to format education listing
+\newenvironment{eSubsection}[4]{
+  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+  %%    School (bold)                     Dates (regular)    %%
+  %%    Title (emphasis)                Location (emphasis)    %%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textbf{#1}                 \hfill                  {    #2}% Stop a space
+  \ifthenelse{\equal{#3}{}}{}{
+  \\
+  \emph{#3}                \hfill                  \emph{#4}% Stop a space
+  }\smallskip
+  % \cdot used for bullets, items non-indented
+  \vspace{0.5em}
+}
+
+% Used to format skills listing
+\newenvironment{lSubsection}[0]{
+  \vspace{0.5em}
   % \cdot used for bullets, items non-indented
   \begin{list}{$\cdot$}{\leftmargin=0em}
   \itemsep -0.5em \vspace{-0.5em}
