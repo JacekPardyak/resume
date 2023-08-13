@@ -4,8 +4,8 @@ page: a4paper
 contact:
     name: Audra Hammond
     degree:
-    address_1: Tampa
-    address_2: Florida
+    street: Tampa
+    city: Florida
     telephone: 555-813-4458 
     email: audra.hammond@email.com
 
