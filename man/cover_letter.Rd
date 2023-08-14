@@ -3,7 +3,7 @@
 \name{cover_letter}
 \alias{cover_letter}
 \alias{templ_cover_letter}
-\title{Resume Templates}
+\title{Cover Letter}
 \usage{
 cover_letter(...)
 
@@ -26,3 +26,14 @@ for this template.\tabular{ll}{
 }
 }
 
+\examples{
+path = "Untitled"
+if (file.exists(path)) {unlink(path, recursive = TRUE)}
+rmarkdown::draft(paste0(path, ".Rmd"),
+template="cover_letter", 
+package="resume", 
+create_dir = TRUE, 
+edit = FALSE)
+rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+if (file.exists(path)) {unlink(path, recursive = TRUE)}
+}

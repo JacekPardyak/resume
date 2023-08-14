@@ -18,6 +18,17 @@
 #' @param ... Arguments to [`rmarkdown::pdf_document`].
 #' @md
 #' @export
+#' 
+#' @examples
+#' path = "Untitled"
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
+#' rmarkdown::draft(paste0(path, ".Rmd"),
+#' template="resume_ats", 
+#' package="resume", 
+#' create_dir = TRUE, 
+#' edit = FALSE)
+#' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
 
 resume_ats <- function(...){
   templ <- system.file("rmarkdown", "templates", "resume_ats", "resources", "template.tex", package = "resume")

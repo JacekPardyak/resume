@@ -19,6 +19,16 @@
 #' @md
 #' @export
 #'
+#' @examples
+#' path = "Untitled"
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
+#' rmarkdown::draft(paste0(path, ".Rmd"),
+#' template="curriculum_vitae", 
+#' package="resume", 
+#' create_dir = TRUE, 
+#' edit = FALSE)
+#' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
 
 curriculum_vitae <- function(...){
   templ <- system.file("rmarkdown", "templates", "curriculum_vitae", "resources", "template.tex", package = "resume")

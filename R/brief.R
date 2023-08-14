@@ -1,4 +1,4 @@
-#' Resume
+#' Brief
 #'
 #' De sjabloon voor het maken van brieven
 #'
@@ -9,8 +9,14 @@
 #' 
 #' @examples
 #' path = "Untitled"
-#' rmarkdown::draft(paste0(path, ".Rmd"), template="brief", package="resume", create_dir = TRUE, edit = FALSE)
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
+#' rmarkdown::draft(paste0(path, ".Rmd"),
+#' template="brief", 
+#' package="resume", 
+#' create_dir = TRUE, 
+#' edit = FALSE)
 #' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
 
 brief <- function(...){
   templ <- system.file("rmarkdown", "templates", "brief", "resources", "template.tex", package = "resume")

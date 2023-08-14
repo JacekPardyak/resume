@@ -23,3 +23,14 @@ for this template.\tabular{ll}{
 }
 }
 
+\examples{
+path = "Untitled"
+if (file.exists(path)) {unlink(path, recursive = TRUE)}
+rmarkdown::draft(paste0(path, ".Rmd"),
+template="resume_ats", 
+package="resume", 
+create_dir = TRUE, 
+edit = FALSE)
+rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+if (file.exists(path)) {unlink(path, recursive = TRUE)}
+}

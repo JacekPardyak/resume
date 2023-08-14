@@ -1,4 +1,4 @@
-#' Resume Templates
+#' Cover Letter
 #'
 #' A template for Cover Letter documents
 #'
@@ -19,6 +19,16 @@
 #' @md
 #' @export
 #'
+#' @examples
+#' path = "Untitled"
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
+#' rmarkdown::draft(paste0(path, ".Rmd"),
+#' template="cover_letter", 
+#' package="resume", 
+#' create_dir = TRUE, 
+#' edit = FALSE)
+#' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
 
 cover_letter <- function(...){
   templ <- system.file("rmarkdown", "templates", "cover_letter", "resources", "template.tex", package = "resume")

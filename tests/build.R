@@ -8,3 +8,7 @@ document()
 check()
 
 install()
+
+path = "Untitled"
+rmarkdown::draft(paste0(path, ".Rmd"), template="brief", package="resume", create_dir = TRUE, edit = FALSE)
+rmarkdown::render(paste0(path, "/", path, ".Rmd"))

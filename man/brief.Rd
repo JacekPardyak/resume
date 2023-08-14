@@ -2,7 +2,7 @@
 % Please edit documentation in R/brief.R
 \name{brief}
 \alias{brief}
-\title{Resume}
+\title{Brief}
 \usage{
 brief(...)
 }
@@ -14,6 +14,12 @@ De sjabloon voor het maken van brieven
 }
 \examples{
 path = "Untitled"
-rmarkdown::draft(paste0(path, ".Rmd"), template="brief", package="resume", create_dir = TRUE, edit = FALSE)
-rmarkdown::render(paste0(path, "/", path, ".Rmd"), clean = FALSE)
+if (file.exists(path)) {unlink(path, recursive = TRUE)}
+rmarkdown::draft(paste0(path, ".Rmd"),
+template="brief", 
+package="resume", 
+create_dir = TRUE, 
+edit = FALSE)
+rmarkdown::render(paste0(path, "/", path, ".Rmd"))
+if (file.exists(path)) {unlink(path, recursive = TRUE)}
 }
