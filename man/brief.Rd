@@ -10,16 +10,10 @@ brief(...)
 \item{...}{Arguments to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document}}.}
 }
 \description{
-A template for Brief documents
+De sjabloon voor het maken van brieven
 }
-\section{About YAML header fields}{
-This section documents some of the YAML fields to know
-for this template.\tabular{ll}{
-   FIELD \tab DESCRIPTION \cr
-   \code{name} \tab your name and surname \cr
-   \code{contact} \tab address, telephone,  email, web \cr
-   \code{profile} \tab short profile summary \cr
-   \code{...} \tab the rest \cr
+\examples{
+path = "Untitled"
+rmarkdown::draft(paste0(path, ".Rmd"), template="brief", package="resume", create_dir = TRUE, edit = FALSE)
+rmarkdown::render(paste0(path, "/", path, ".Rmd"), clean = FALSE)
 }
-}
-

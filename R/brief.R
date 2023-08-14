@@ -1,23 +1,16 @@
 #' Resume
 #'
-#' A template for Brief documents
+#' De sjabloon voor het maken van brieven
 #'
-#' # About YAML header fields
-#'
-#' This section documents some of the YAML fields to know
-#' for this template.
-#'
-#'
-#' | FIELD     | DESCRIPTION                    |
-#' | --------- | ------------------------------ |
-#' | `name`    | your name and surname          |
-#' | `contact` | address, telephone,  email, web|
-#' | `profile` | short profile summary          |
-#' | `...`     | the rest                       |
 #'
 #' @param ... Arguments to [`rmarkdown::pdf_document`].
 #' @md
 #' @export
+#' 
+#' @examples
+#' path = "Untitled"
+#' rmarkdown::draft(paste0(path, ".Rmd"), template="brief", package="resume", create_dir = TRUE, edit = FALSE)
+#' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
 
 brief <- function(...){
   templ <- system.file("rmarkdown", "templates", "brief", "resources", "template.tex", package = "resume")

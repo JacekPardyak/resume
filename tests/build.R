@@ -8,11 +8,3 @@ document()
 check()
 
 install()
-
-library(radomd)
-Sys.setenv(adomd_path = "/Program Files/Microsoft.NET/ADOMD.NET/160", 
-           conn_str = "Data Source=localhost; Provider=MSOLAP; initial catalog=Analysis Services Tutorial")
-Query() %>% execute()
-Query() %>% cube("[Adventure Works]") %>% 
-  columns(c("[Measures].[Internet Sales Count]", "[Measures].[Internet Sales-Sales Amount]"))
-
