@@ -1,4 +1,4 @@
-#' Brief
+#' Motivatiebrief
 #'
 #' De sjabloon voor het maken van brieven
 #'
@@ -11,21 +11,21 @@
 #' path = "Untitled"
 #' if (file.exists(path)) {unlink(path, recursive = TRUE)}
 #' rmarkdown::draft(paste0(path, ".Rmd"),
-#' template="brief", 
+#' template="motivatiebrief", 
 #' package="resume", 
 #' create_dir = TRUE, 
 #' edit = FALSE)
 #' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
 #' if (file.exists(path)) {unlink(path, recursive = TRUE)}
 
-brief <- function(...){
-  templ <- system.file("rmarkdown", "templates", "brief", "resources", "template.tex", package = "resume")
+motivatiebrief <- function(...){
+  templ <- system.file("rmarkdown", "templates", "motivatiebrief", "resources", "template.tex", package = "resume")
   rmarkdown::pdf_document(template = templ,
                           ...)
 }
 
 #' @rdname resume
 #' @export
-templ_brief <- function() {
-  print(system.file("rmarkdown", "templates", "brief", "resources", "template.tex", package = "resume"))
+templ_motivatiebrief <- function() {
+  print(system.file("rmarkdown", "templates", "motivatiebrief", "resources", "template.tex", package = "resume"))
 }

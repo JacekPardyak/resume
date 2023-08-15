@@ -1,0 +1,25 @@
+---
+applicant:
+    name: FirstName LastName
+    address1: Applicant Address First
+    address2: Applicant Address Second
+    address3: Applicant Address Third
+
+employer:
+    name: Employer Name
+    address1: Employer Address First
+    address2: Employer Address Second
+    address3: Employer Address Third
+
+job:
+  title:     "Senior Data Scientist"
+  # For running headers, if needed
+  location:     "Capitalized Title"
+  
+abstract: >
+  I do believe that combination of three things: my long-term experience as a Data Scientist, extensive knowledge of Machine Learning algorithms and tooling as well as talent for gaining new domain knowledge very fast makes me the right candidate for this position. 
+  As you may note in my CV, I coordinated multiple international teams and produced high quality localized websites. For several years I was taking care of the customer needs by providing and delivering professional, helpful, high quality service and assistance before, during, and after the customer's requirements are met. My various roles within Internet related companies were all focused on customer satisfaction. I have always been trying to understand consumer's needs in order to provide the best service. French native who lived and worked in many different places, 
+  
+output: resume::list_motywacyjny
+---
+
