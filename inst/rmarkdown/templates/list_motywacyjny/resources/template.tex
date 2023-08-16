@@ -7,26 +7,22 @@
 \usepackage{amssymb}
 \usepackage{newcent}
 \usepackage{graphicx}
-\address{$applicant.name$ \\ $for(applicant.address)$ $applicant.address.line$ \\ $endfor$ }
-
-    
-    
+\address{$applicant.name$ \\ $for(applicant.address/allbutlast)$ $applicant.address.line$ \\ $endfor$ $for(applicant.address/last)$ $applicant.address.line$ $endfor$}
 
 % \signature{$applicant.name$} 
 \begin{document} 
-\begin{letter}{$employer.name$ \\ $employer.address1$ \\ $employer.address2$ \\ $employer.address3$} 
-\opening{Dear Recruiting Team,} 
-With this letter I hereby wish to apply for the \textbf{$job.title$} position at $employer.name$ in $job.location$.
+\begin{letter}{$employer.name$ \\ $for(employer.address/allbutlast)$ $employer.address.line$ \\ $endfor$ $for(employer.address/last)$ $employer.address.line$ $endfor$} 
+\opening{Szanowni Państwo,} 
 
-$abstract$
+$header$
 
+$body$
 
-Please find out more on my qualifications by reading enclosed Résumé. Thank you very much in advance for your consideration. If you have any further questions regarding my candidature, please contact me via telephone or e-mail.
+$tail$
 
-
-\closing{Sincerely yours,\\
+\closing{Z poważaniem,\\
 \fromsig{\includegraphics[scale=0.3]{Signature.pdf}} \\
-\fromname{$for(applicant)$$applicant.name$$sep$, $endfor$}
+\fromname{$applicant.name$}
 }
  
 %\cc{Cclist} 
