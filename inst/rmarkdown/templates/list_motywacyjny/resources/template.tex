@@ -7,7 +7,10 @@
 \usepackage{amssymb}
 \usepackage{newcent}
 \usepackage{graphicx}
-\address{$applicant.name$ \\ $applicant.address1$ \\ $applicant.address2$ \\ $if(applicant.address3)$ $applicant.address3$\\$endif$ }
+\address{$applicant.name$ \\ $for(applicant.address)$ $applicant.address.line$ \\ $endfor$ }
+
+    
+    
 
 % \signature{$applicant.name$} 
 \begin{document} 

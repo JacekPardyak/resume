@@ -1,9 +1,10 @@
 ---
 applicant:
     name: FirstName LastName
-    address1: Applicant Address First
-    address2: Applicant Address Second
-    address3: Applicant Address Third
+    address:
+      - line: Applicant Address First
+      - line: Applicant Address Second
+      - line: Applicant Address Third
 
 employer:
     name: Employer Name
