@@ -1,0 +1,38 @@
+\documentclass[11pt,a4paper]{letter}
+%\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+
+\usepackage[ukrainian]{babel}
+\usepackage{fontspec}
+
+%-----------------------------------------------------------------------
+\setromanfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont[Color={0019D4}]{Courier New}
+%-----------------------------------------------------------------------
+
+
+\usepackage{graphicx}
+\address{$applicant.name$ \\ $for(applicant.address/allbutlast)$ $applicant.address.line$ \\ $endfor$ $for(applicant.address/last)$ $applicant.address.line$ $endfor$}
+
+% \signature{$applicant.name$} 
+\begin{document} 
+\begin{letter}{$employer.name$ \\ $for(employer.address/allbutlast)$ $employer.address.line$ \\ $endfor$ $for(employer.address/last)$ $employer.address.line$ $endfor$} 
+\opening{Пані та панове,} 
+
+\indent $header$
+
+\indent $body$
+
+\indent $tail$
+
+\closing{З повагою,\\
+\fromsig{\includegraphics[scale=0.3]{Signature.pdf}} \\
+\fromname{$applicant.name$}
+}
+ 
+%\cc{Cclist} 
+%\ps{adding a postscript} 
+ \encl{Résumé} 
+\end{letter} 
+\end{document}

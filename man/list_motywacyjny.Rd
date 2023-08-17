@@ -2,9 +2,12 @@
 % Please edit documentation in R/list_motywacyjny.R
 \name{list_motywacyjny}
 \alias{list_motywacyjny}
+\alias{templ_list_motywacyjny}
 \title{list_motywacyjny}
 \usage{
 list_motywacyjny(...)
+
+templ_list_motywacyjny()
 }
 \arguments{
 \item{...}{Arguments to \code{\link[rmarkdown:pdf_document]{rmarkdown::pdf_document}}.}
