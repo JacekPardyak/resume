@@ -63,6 +63,7 @@ or like this:
 knitr::include_graphics("./man/figures/Capture4.PNG")
 ```
 
+
 And cover letter like this:
 
 ```{r, echo=FALSE, out.width = "750px", fig.align="center"}

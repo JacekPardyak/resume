@@ -1,25 +1,33 @@
 ---
 applicant:
-    address1: Applicant Address First
-    address2: Applicant Address Second
-    address3: Applicant Address Third
-    name: FirstName LastName
+    name: Томас із Вікіпедії
+    address:
+      - line: вул. Гродзька 31
+      - line: 31-234 Краків
+      - line: Польща
 
 employer:
-    name: Employer Name
-    address1: Employer Address First
-    address2: Employer Address Second
-    address3: Employer Address Third
+    name: Компанія «Ян Ковальський і син»
+    address:
+      - line: вул. Межигірська, 63
+      - line: Київ
+      - line: Україна
 
-job:
-  title:     "Senior Data Scientist"
-  # For running headers, if needed
-  location:     "Capitalized Title"
+header: >
+  Я редактор Вікіпедії, безкоштовної та вільної енциклопедії. Мета нашого проекту – зібрати всі знання, розвинути та поширити їх безкоштовно на благо людства. Водночас ми дуже поважаємо авторські права, і саме з цього приводу я до вас звертаюся.
   
-abstract: >
-  I do believe that combination of three things: my long-term experience as a Data Scientist, extensive knowledge of Machine Learning algorithms and tooling as well as talent for gaining new domain knowledge very fast makes me the right candidate for this position. 
-  As you may note in my CV, I coordinated multiple international teams and produced high quality localized websites. For several years I was taking care of the customer needs by providing and delivering professional, helpful, high quality service and assistance before, during, and after the customer's requirements are met. My various roles within Internet related companies were all focused on customer satisfaction. I have always been trying to understand consumer's needs in order to provide the best service. French native who lived and worked in many different places, 
-  
-output: resume::cover_letter
+body: >
+  На вашому сайті є чудові фотографії центру Торуня. Ми будемо дуже вдячні, якщо ви надасте нам дозвіл використовувати їх у Вікіпедії (включаючи статті про Торунь), якщо ви володієте авторським правом на це. Оскільки ми надаємо великого значення авторському праву, ми не будемо публікувати ці матеріали без прямої згоди автора.
+
+tail: >
+  Дуже дякую за ваш час,
+
+output:
+  resume::cover_letter: 
+    latex_engine: xelatex
+    keep_tex: true
+  language: ukrainian
+  font_size: 11pt
+  paper_size: a4paper
 ---
 

@@ -1,27 +1,30 @@
-\documentclass[10pt,a4paper]{letter}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{newcent}
+\documentclass[$output.font_size$,$output.paper_size$]{letter}
+%\usepackage[utf8]{inputenc}
+%$if(language.ukrainian)$
+%\usepackage[T2A]{fontenc}
+%$endif$
+
+\usepackage[$output.language$]{babel}
+\usepackage{fontspec}
+\setromanfont{Times New Roman}
+
 \usepackage{graphicx}
-\address{$applicant.name$ \\ $applicant.address1$ \\ $applicant.address2$ \\ $if(applicant.address3)$ $applicant.address3$\\$endif$ }
+\address{$applicant.name$ \\ $for(applicant.address/allbutlast)$ $applicant.address.line$ \\ $endfor$ $for(applicant.address/last)$ $applicant.address.line$ $endfor$}
 
 % \signature{$applicant.name$} 
 \begin{document} 
-\begin{letter}{$employer.name$ \\ $employer.address1$ \\ $employer.address2$ \\ $employer.address3$} 
-\opening{Dear Recruiting Team,} 
-With this letter I hereby wish to apply for the \textbf{$job.title$} position at $employer.name$ in $job.location$.
+\begin{letter}{$employer.name$ \\ $for(employer.address/allbutlast)$ $employer.address.line$ \\ $endfor$ $for(employer.address/last)$ $employer.address.line$ $endfor$} 
+\opening{Пані та панове,} 
 
-$abstract$
+\indent $header$
 
+\indent $body$
 
-Please find out more on my qualifications by reading enclosed Résumé. Thank you very much in advance for your consideration. If you have any further questions regarding my candidature, please contact me via telephone or e-mail.
+\indent $tail$
 
-
-\closing{Sincerely yours,\\
+\closing{З повагою,\\
 \fromsig{\includegraphics[scale=0.3]{Signature.pdf}} \\
-\fromname{$for(applicant)$$applicant.name$$sep$, $endfor$}
+\fromname{$applicant.name$}
 }
  
 %\cc{Cclist} 
