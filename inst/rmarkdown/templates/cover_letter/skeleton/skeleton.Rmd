@@ -29,5 +29,6 @@ output:
   language: ukrainian
   font_size: 11pt
   paper_size: a4paper
+  font: Times New Roman
 ---
 
