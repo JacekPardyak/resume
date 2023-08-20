@@ -31,6 +31,11 @@ devtools::install_github("jacekpardyak/resume")
 
 ## Usage
 
+You can use these templates in:
+- RStudio
+- R Jupyter Notebook
+- Python Jupter Notebook
+
 The easiest way to use my templates is within Rstudio. Go to *File > New File > R Markdown*. Here, select any template you'd like to use.
 
 ```{r, echo=FALSE, out.width = "750px", fig.align="center"}
@@ -70,6 +75,10 @@ And cover letter like this:
 knitr::include_graphics("./man/figures/Capture5.PNG")
 ```
 
-## Possible problems
+## Usage in Google Colaboratory 
 
-If MiKTex generates errors, compile *.tex files in TeXworks once to install the missing dependencies.
+If you have problems setting up your RStudio, you can use the templates in Google Colab:
+
+- Jupyter R Notebook [link]("./man/figures/colab/resume.ipynb)
+
+- Jupyter Python Notebook
