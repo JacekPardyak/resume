@@ -14,7 +14,7 @@
 % \signature{$applicant.name$} 
 \begin{document} 
 \begin{letter}{$employer.name$ \\ $for(employer.address/allbutlast)$ $employer.address.line$ \\ $endfor$ $for(employer.address/last)$ $employer.address.line$ $endfor$} 
-\opening{Пані та панове,} 
+\opening{$opening$} 
 
 \indent $header$
 
@@ -22,7 +22,7 @@
 
 \indent $tail$
 
-\closing{З повагою,\\
+\closing{$closing$ \\
 \fromsig{\includegraphics[scale=0.3]{Signature.pdf}} \\
 \fromname{$applicant.name$}
 }

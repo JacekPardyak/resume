@@ -109,7 +109,7 @@
   \itemsep -0.5em \vspace{-0.5em}
 }{
   \end{list}
-  \vspace{0.5em}
+%  \vspace{0.5em}
 }
 
 % Used to format education listing
@@ -124,7 +124,7 @@
   \emph{#3}                \hfill                  \emph{#4}% Stop a space
   }\smallskip
   % \cdot used for bullets, items non-indented
-  \vspace{0.5em}
+ % \vspace{0.5em}
 }
 
 % Used to format skills listing
@@ -135,7 +135,7 @@
   \itemsep -0.5em \vspace{-0.5em}
 }{
   \end{list}
-  \vspace{0.5em}
+%  \vspace{0.5em}
 }
 
 \def\namesize{\huge}
