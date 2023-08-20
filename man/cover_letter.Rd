@@ -34,6 +34,11 @@ template="cover_letter",
 package="resume", 
 create_dir = TRUE, 
 edit = FALSE)
+if(Sys.info()["sysname"]  != "Windows") {
+str = readLines(paste0(path, "/", path, ".Rmd"))
+str = gsub("Times New Roman", "Liberation Serif", str )
+writeLines(str, paste0(path, "/", path, ".Rmd")) }
 rmarkdown::render(paste0(path, "/", path, ".Rmd"))
 if (file.exists(path)) {unlink(path, recursive = TRUE)}
+
 }
