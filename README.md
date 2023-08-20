@@ -63,8 +63,7 @@ And cover letter like this:
 
 ## Usage in Google Colaboratory
 
-If you have problems setting up your RStudio, you can use the templates
-in Google Colab:
+In addition to RStudio, you can use the templates in Google Colab:
 
 - Jupyter R Notebook
   [link](https://github.com/JacekPardyak/resume/blob/master/man/figures/colab/resume.ipynb)
