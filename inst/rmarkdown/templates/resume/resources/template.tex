@@ -1,64 +1,46 @@
-% LaTeX resume using res.cls
-\documentclass[a4paper, line, 11pt]{resume} % default is 10 pt
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[polish, english]{babel}
-\usepackage{hyperref}  % uses hyperlinks
-\usepackage{amsmath}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-\usepackage{newcent}   % uses new century schoolbook postscript font
-\usepackage{latexsym}   % to get the \Box symbol
-\setlength{\textheight}{10in} % increase text height to fit resume on 1 page
-\topmargin=-0.5in % start text higher on the page
+%\documentclass{resume} % Use the custom resume.cls style
 
-\begin{document} 
- 
-\name{$name$} 
-\address{$if(contact.address)$$contact.address$\\$endif$$if(contact.telephone)$Tel: $contact.telephone$$endif$}        
-\address{$if(contact.email)$E-mail: $contact.email$$endif$$if(contact.web)$\\ Web: $contact.web$$endif$$if(contact.extra)$$contact.extra$$endif$}
+\documentclass[$output.font_size$,$output.paper_size$]{resume}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{fontspec}
+\setromanfont{$output.font$}
+
+\name{ $contact.name$$if(contact.degree)$, $contact.degree$$endif$}
+\address{ $if(contact.street)$$contact.street$$endif$ \\ $if(contact.city)$$contact.city$$endif$}
+\address{ $if(contact.telephone)$$contact.telephone$$endif$ \\ $if(contact.email)$$contact.email$$endif$}
+
+\def\nameskip{\bigskip}
+\def\sectionskip{\medskip}
+
+\begin{document}
+  \begin{rSection}{Summary}
+  $summary$ 
+  \end{rSection}
+
+  \begin{rSection}{Education}
+    $for(education)$
+    \begin{eSubsection}{$education.school$}{$education.year$}{$education.title$}{}
+     \end{eSubsection}
+    $endfor$
+  \end{rSection}
   
-                        
-\begin{resume}                         
- 
-\section{PROFESSIONAL PROFILE}  
-  $profile$ 
-
-\section{SKILLS}  
-
-$for(skills)$
-    \textbf{$skills.category$}: $skills.list$$if(skills.continue)$\\$endif$
-$endfor$
-
-\section{EDUCATION} 
-
-$for(education)$
-    \textbf{\uppercase{$education.school$}} \emph{$education.title$}, $education.field$ ($education.year$)\\ $education.notes$ $if(education.continue)$\\$endif$
-$endfor$
-
   
-\section{RECENT WORK EXPERIENCE}
-$for(experience)$
-    \textbf{\uppercase{$experience.employer$}}, $experience.city$ \\ \emph{$experience.position$} ($experience.period$)\\ $experience.description$ $if(experience.continue)$\\$endif$
-$endfor$
+  \begin{rSection}{Experience}
+    $for(experience)$
+    \begin{rSubsection}{$experience.employer$}{$experience.period$}{$experience.position$}{$experience.city$}
+    $for(experience.duties)$
+    \item $experience.duties.duty$
+    $endfor$
+    \end{rSubsection}
+    $endfor$
+  \end{rSection}
+  
+  \begin{rSection}{Skills}
+    \begin{lSubsection}
+    $for(skills)$
+    \item $skills.skill$
+    $endfor$
+    \end{lSubsection}
+  \end{rSection}
 
-
-\section{OUTSIDE WORK ACCOMPLISHMENTS}  
-$for(outside-work)$
-\textbf{$outside-work.title$} $outside-work.accomplishment$$if(outside-work.continue)$\\$endif$
-$endfor$
-
-\section{REFEREES}  
-
-$for(referee)$
-\textbf{\uppercase{$referee.full_name$}} \emph{$referee.job_title$} $referee.current_contact_details$$if(referee.continue)$\\$endif$
-$endfor$
-
-
-\end{resume}
 \end{document}
-
-
-
-
-
-

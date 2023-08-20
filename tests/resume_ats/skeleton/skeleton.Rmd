@@ -51,5 +51,3 @@ output:
   paper_size: a4paper
   font: Arial
 ---
-
-

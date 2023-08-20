@@ -1,76 +1,53 @@
 ---
-name: FirstName LastName
-    
 contact:
-    address: Applicant Address with Street, City, Zip Code
-    telephone: +48 999 000 666
-    email: e.mail@e.mail
-    web: https://mysite.com
-    extra: 
+    name: Audra Hammond
+    degree:
+    street: Tampa
+    city: Florida
+    telephone: 555-813-4458 
+    email: audra.hammond@email.com
 
-  
-profile: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
-
-skills:
-  - category: Applications
-    list: Maxima, R, R Studio, Weka, MADlib, MLlib
-    continue: true
-  - category: Programming
-    list: R, Python, C/C++
-    continue: 
+summary: >
+  Sales manager with five years of experience eager to use relationship management, organizational and research skills to optimize sales strategies.
 
 education:
-  - school: TUV University of Leiden
-    title: PhD Candidate
-    field: Computer Science
+  - school: University of Eastern Shore
+    title: Bachelor of Arts in sales
+    year: 2003
+  - school: Seinäjoki College, Finland
+    title: Graduate
     year: 1998
-    notes: Thesis in preparation
-    continue: true
-  - school: University of life
-    title: Master of Science
-    field: Mathematics
-    year: 1996
-    notes: Thesis in the area of Statistics
-# leave this attribute empty to close the list, otherwise extra "break line" will be added
-    continue: 
-
 experience:
-  - employer: ABC
-    city: Amstelveen, Netherlands
-    position: Data Scientist
-    period: December 2015 - Present
-    description: Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system.
-    continue: true
-  - employer: CDE
-    city: Warsaw, Poland
-    position: Data Scientist
-    period: February 2015 - December 2015
-    description: Assisted in teaching responsibilities for circuits and electronics courses. Organized and implemented the speech processing lab at Rensselaer. Authored several FORTRAN programs for Prime 500 system. Analyzed the operation of microprocessor register cells using SPICE and circuit analysis techniques. Derived SPICE model for short-channel MOS devices. 
-    continue:
-    
-outside-work:
-  - title: R package resume
-    accomplishment: (https://github.com/JacekPardyak/resume)
-    continue: true  
-  - title: Python script
-    accomplishment: for daring attitude (http://bit.ly/2aNdf6D)
-    continue:
+  - employer: Industry Plus Magazine
+    city: Tampa, Florida
+    position: Sales Manager
+    period: February 2022–Current
+    duties:
+    - duty: Assist sales team to achieve profit goals, averaging $200,000 in annual client revenue
+    - duty: Oversee development of a 15-member sales team by promoting results-driven strategies
+    - duty: Develop client acquisition and lead generation strategies by conducting market research
+    - duty: Project expected sales volume for existing accounts to properly allocate budget
+    - duty: Analyze budget to reduce expenditure and optimize profits
+  - employer: Monkey Foot Publishing
+    city: Tampa, Florida
+    position: Assistant Relationship
+    period: July 2018–February 2022
+    duties:
+    - duty: Developed a territory plan and make adjustments based on analysis of competitor behavior
+    - duty: Educated clients on new products and services to optimize upselling tactics
+    - duty: Maintained record of customer comments, complaints and inquiries
 
-referee:
-  - full_name: Jon Doe
-    job_title: Department Director
-    current_contact_details: (+31) 567 432 222 
-    continue: true
-  - full_name: Forrest Gump
-    job_title: Partner
-    current_contact_details: (+48) 567 432 222 
-    continue: 
-    
+skills:
+  - skill: Relationship management
+  - skill: Time management
+  - skill: Consultative sales
+  - skill: Communication
+     
 output:
   resume::resume:
+    latex_engine: xelatex
     keep_tex: true
-
+  font_size: 11pt
+  paper_size: a4paper
+  font: Arial
 ---
-
-

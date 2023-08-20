@@ -20,19 +20,7 @@
 #' @export
 #' 
 #' @examples
-#' path = "Untitled"
-#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
-#' rmarkdown::draft(paste0(path, ".Rmd"),
-#' template="resume_ats", 
-#' package="resume", 
-#' create_dir = TRUE, 
-#' edit = FALSE)
-#' if(Sys.info()["sysname"]  != "Windows") {
-#' str = readLines(paste0(path, "/", path, ".Rmd"))
-#' str = gsub("Arial", "Liberation Serif", str )
-#' writeLines(str, paste0(path, "/", path, ".Rmd")) 
-#' rmarkdown::render(paste0(path, "/", path, ".Rmd"))
-#' if (file.exists(path)) {unlink(path, recursive = TRUE)}
+
 
 resume_ats <- function(...){
   templ <- system.file("rmarkdown", "templates", "resume_ats", "resources", "template.tex", package = "resume")
