@@ -1,7 +1,9 @@
 %\documentclass{resume} % Use the custom resume.cls style
 
-\documentclass[$page$, 11pt]{resume}
+\documentclass[$output.font_size$,$output.paper_size$]{resume}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{fontspec}
+\setromanfont{$output.font$}
 
 \name{ $contact.name$$if(contact.degree)$, $contact.degree$$endif$}
 \address{ $if(contact.street)$$contact.street$$endif$ \\ $if(contact.city)$$contact.city$$endif$}
