@@ -32,6 +32,7 @@ devtools::install_github("jacekpardyak/resume")
 ## Usage
 
 You can use these templates in:
+
 - RStudio
 - R Jupyter Notebook
 - Python Jupter Notebook
@@ -79,6 +80,6 @@ knitr::include_graphics("./man/figures/Capture5.PNG")
 
 If you have problems setting up your RStudio, you can use the templates in Google Colab:
 
-- Jupyter R Notebook [link]("./man/figures/colab/resume.ipynb)
+- Jupyter R Notebook [link](https://github.com/JacekPardyak/resume/blob/master/man/figures/colab/resume.ipynb)
 
-- Jupyter Python Notebook
+- Jupyter Python Notebook [link](https://github.com/JacekPardyak/resume/blob/master/man/figures/colab/resume_py.ipynb)

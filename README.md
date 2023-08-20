@@ -22,8 +22,11 @@ devtools::install_github("jacekpardyak/resume")
 
 ## Usage
 
-You can use these templates in: - RStudio - R Jupyter Notebook - Python
-Jupter Notebook
+You can use these templates in:
+
+- RStudio
+- R Jupyter Notebook
+- Python Jupter Notebook
 
 The easiest way to use my templates is within Rstudio. Go to *File \>
 New File \> R Markdown*. Here, select any template you’d like to use.
@@ -63,6 +66,8 @@ And cover letter like this:
 If you have problems setting up your RStudio, you can use the templates
 in Google Colab:
 
-- Jupyter R Notebook [link](%22./man/figures/colab/resume.ipynb)
+- Jupyter R Notebook
+  [link](https://github.com/JacekPardyak/resume/blob/master/man/figures/colab/resume.ipynb)
 
 - Jupyter Python Notebook
+  [link](https://github.com/JacekPardyak/resume/blob/master/man/figures/colab/resume_py.ipynb)
